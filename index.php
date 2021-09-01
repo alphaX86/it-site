@@ -17,7 +17,7 @@
                     <li class="option-item"></li>
                 </div>
                 <div class="images"></div>
-                <div id="flash" class="flash-news"></div>
+                <div class="flash-news"></div>
             </div>
             <div class='footer'></div>
         </div>

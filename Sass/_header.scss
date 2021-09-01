@@ -36,7 +36,8 @@
     flex: 0.2;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    align-items: center;
+    justify-content: space-around;
     width: 99%;
     border: 2px solid black;
     border-radius: 15px;

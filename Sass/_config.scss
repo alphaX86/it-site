@@ -13,3 +13,9 @@ $menuColors:("bg":blue, "text":white, "hover":grey);
         @content
     }
 }
+
+@mixin desktop {
+    @media screen and (min-width: 900px) {
+        @content
+    }
+}
