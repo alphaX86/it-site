@@ -1,0 +1,43 @@
+.admin-flash {
+    width: 80%;
+    height: 80vh;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    &-present {
+        width: 50%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        overflow-y: scroll;
+        overflow-x: none;
+        padding: 3px;
+        &_item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 10%;
+            width: 97%;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 2px 3px;
+            padding-right: 7px;
+            color: green;
+            &_news {
+                font-size: 14px;
+                color: black;
+            }
+        }
+        &_item:first-child {
+            justify-content: space-around;
+            color: blue;
+            &_news {
+                font-size: 24px;
+                color: black;
+            }
+        }
+    }
+}

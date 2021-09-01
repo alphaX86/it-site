@@ -1,6 +1,7 @@
 @import 'config';
 @import 'header';
 @import 'aboutUs';
+@import'../Admin/Sass/admin';
 html {
     font-size: 18px;
     font-weight: 500;
@@ -26,4 +27,9 @@ body {
 
 a {
     text-decoration: none;
+}
+
+li,
+ul {
+    list-style-type: none;
 }
