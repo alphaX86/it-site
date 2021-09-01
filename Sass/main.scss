@@ -1,1 +1,29 @@
+@import 'config';
+@import 'header';
+@import 'aboutUs';
+html {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px;
+}
 
+.site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}

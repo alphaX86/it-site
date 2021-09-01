@@ -1,1 +1,39 @@
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 2px solid black;
+    width: 97%;
+    align-items: center;
+    height: 55vh;
+    margin: 5px;
+}
 
+.option {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 90%;
+    &-item {
+        list-style-type: none;
+        flex: 1;
+        border: 2px solid blue;
+        width: 97%;
+    }
+}
+
+.images {
+    width: 50%;
+    height: 90%;
+    border: 2px solid red;
+}
+
+.flash-news {
+    height: 90%;
+    width: 25%;
+    border: 2px solid black;
+}

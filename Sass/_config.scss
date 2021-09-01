@@ -1,1 +1,15 @@
+$themeColors: ( "primary":red, "light":blue, "text-primary":white);
+$menuColors:("bg":blue, "text":white, "hover":grey);
+@function theme($color) {
+    @return map-get($themeColors, $color);
+}
 
+@function menuColor($color) {
+    @return map-get($menuColors, $color);
+}
+
+@mixin mobile {
+    @media (max-width: 820px) {
+        @content
+    }
+}
