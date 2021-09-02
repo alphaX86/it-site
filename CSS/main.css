@@ -127,10 +127,11 @@
   width: 98%;
   height: 20%;
   border: 2px solid black;
+  font-size: 12px;
 }
 .admin-nav_item {
   padding: 0.5%;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 .admin-nav_item:hover {
   background-color: grey;
@@ -145,7 +146,11 @@
   padding: 10px;
   margin: 10px;
   border: 2px solid black;
+  border-radius: 15px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
 }
 .admin-flash-present {
   width: 50%;
@@ -155,7 +160,7 @@
   align-items: center;
   border: 2px solid black;
   overflow-y: scroll;
-  overflow-x: none;
+  overflow-x: hidden;
   padding: 3px;
 }
 .admin-flash-present_item {
@@ -171,16 +176,75 @@
   color: green;
 }
 .admin-flash-present_item_news {
-  font-size: 14px;
   color: black;
 }
 .admin-flash-present_item:first-child {
-  justify-content: space-around;
-  color: blue;
+  justify-content: center;
 }
 .admin-flash-present_item:first-child_news {
-  font-size: 24px;
+  font-size: 18px;
+}
+.admin-flash-present_add {
+  text-align: center;
   color: black;
+}
+.admin-flash-edit {
+  width: 47%;
+  height: 40%;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+}
+.admin-flash-edit_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97%;
+  height: 20%;
+}
+.admin-flash-edit_item_text {
+  width: 30%;
+}
+.admin-flash-edit_item_input {
+  width: 90%;
+  padding: 2px 7px;
+  height: 50%;
+  border-radius: 10px;
+}
+.admin-flash-edit_buttons {
+  width: 98%;
+  height: 25%;
+}
+.admin-flash-edit_delete {
+  color: red;
+  position: relative;
+  left: 170px;
+  top: 10px;
+  height: 70%;
+}
+.admin-flash-edit_confirm {
+  color: black;
+  position: relative;
+  left: 320px;
+  top: 10px;
+  height: 70%;
+}
+.admin-flash-edit_add {
+  color: black;
+  position: relative;
+  left: 30%;
+  top: 10px;
+  height: 70%;
+}
+.admin-flash-edit_add:hover {
+  color: green;
+}
+
+.admin-edit-button {
+  cursor: pointer;
 }
 
 html {
