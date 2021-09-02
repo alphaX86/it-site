@@ -4,7 +4,11 @@
     padding: 10px;
     margin: 10px;
     border: 2px solid black;
+    border-radius: 15px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
     &-present {
         width: 50%;
         height: 95%;
@@ -13,7 +17,7 @@
         align-items: center;
         border: 2px solid black;
         overflow-y: scroll;
-        overflow-x: none;
+        overflow-x: hidden;
         padding: 3px;
         &_item {
             display: flex;
@@ -27,17 +31,72 @@
             padding-right: 7px;
             color: green;
             &_news {
-                font-size: 14px;
                 color: black;
             }
         }
         &_item:first-child {
-            justify-content: space-around;
-            color: blue;
+            justify-content: center;
             &_news {
-                font-size: 24px;
-                color: black;
+                font-size: 18px;
             }
+        }
+        &_add {
+            text-align: center;
+            color: black;
+        }
+    }
+    &-edit {
+        width: 47%;
+        height: 40%;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2px;
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 97%;
+            height: 20%;
+            &_text {
+                width: 30%;
+            }
+            &_input {
+                width: 90%;
+                padding: 2px 7px;
+                height: 50%;
+                border-radius: 10px;
+            }
+        }
+        &_buttons {
+            width: 98%;
+            height: 25%;
+        }
+        &_delete {
+            color: red;
+            position: relative;
+            left: 170px;
+            top: 10px;
+            height: 70%;
+        }
+        &_confirm {
+            color: black;
+            position: relative;
+            left: 320px;
+            top: 10px;
+            height: 70%;
+        }
+        &_add {
+            color: black;
+            position: relative;
+            left: 30%;
+            top: 10px;
+            height: 70%;
+        }
+        &_add:hover {
+            color: green;
         }
     }
 }
