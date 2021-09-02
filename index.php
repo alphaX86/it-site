@@ -19,7 +19,7 @@
                 <div class="images"></div>
                 <div class="flash-news"></div>
             </div>
-            <div class='footer'></div>
+           <?php include 'footer.php'?>
         </div>
     </body>
 
