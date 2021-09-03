@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^/Admin/([a-zA-Z0-9]+)/$ /flashNews/index.php?statusChange=$1
+RewriteRule ^admin/([a-zA-Z0-9]+)/$ admin/flashNews.php?statusChange=$1
