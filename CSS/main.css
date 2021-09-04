@@ -151,6 +151,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
+  background-color: #b5e4e6;
 }
 .admin-flash-present {
   width: 50%;
@@ -162,6 +163,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 3px;
+  background-color: white;
 }
 .admin-flash-present_item {
   display: flex;
@@ -178,10 +180,10 @@
 .admin-flash-present_item_news {
   color: black;
 }
-.admin-flash-present_item:first-child {
+.admin-flash-present_item:last-child {
   justify-content: center;
 }
-.admin-flash-present_item:first-child_news {
+.admin-flash-present_item:last-child_news {
   font-size: 18px;
 }
 .admin-flash-present_add {
@@ -193,6 +195,11 @@
   height: 40%;
   border: 2px solid black;
   border-radius: 10px;
+  background-color: white;
+}
+.admin-flash-edit_form {
+  height: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,6 +208,7 @@
 .admin-flash-edit_item {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   width: 97%;
   height: 20%;
@@ -221,23 +229,26 @@
 .admin-flash-edit_delete {
   color: red;
   position: relative;
-  left: 170px;
+  left: 50px;
   top: 10px;
-  height: 70%;
+  background-color: transparent;
+  border: none;
 }
 .admin-flash-edit_confirm {
   color: black;
   position: relative;
-  left: 320px;
+  left: 200px;
   top: 10px;
-  height: 70%;
+  background-color: transparent;
+  border: none;
 }
 .admin-flash-edit_add {
   color: black;
   position: relative;
-  left: 30%;
-  top: 10px;
-  height: 70%;
+  left: 15%;
+  height: 90%;
+  background-color: transparent;
+  border: none;
 }
 .admin-flash-edit_add:hover {
   color: green;

@@ -1,8 +1,8 @@
 <?php
-$servername = "mysql.it.mitindia.edu";
-$username = "it_webteam";
-$password = "itzwebteamit12";
-$dbname = "admin_it";
+$servername = "localhost";
+$username = "phpmyadmin";
+$password = "SHANkar-php03";
+$dbname = "IT_Website";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

@@ -1,6 +1,6 @@
 <div class="admin-nav">
     <li class="admin-nav_item">  
-        <a href="./index.php" class="admin-nav_link">FLASH NEWS</a>
+        <a href="./flashNews.php" class="admin-nav_link">FLASH NEWS</a>
     </li>
     <li class="admin-nav_item">
         <a href="./gallery.php" class="admin-nav_link">GALLERY</a>
