@@ -8,6 +8,7 @@
     <div class='site'>
         <?php include 'header.php'?>
 
+        <?php include 'footer.php'?>
     </div>
     </body>
 

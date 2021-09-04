@@ -16,7 +16,7 @@
         </li>
         <li class="menu-nav_item">
             <i class="fas fa-address-card fa-1x menu-nav_logo"></i>
-            <a href="vision_mission.php" class="menu-nav_link">VISSION & MISSION</a>
+            <a href="vision_mission.php" class="menu-nav_link">VISION & MISSION</a>
         </li>
         <li class="menu-nav_item">
             <i class="fas fa-address-card fa-1x menu-nav_logo"></i>

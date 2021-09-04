@@ -4,8 +4,42 @@
     left: 0px;
     right: 0px;
     height: 25%;
-    width: 97%;
+    width: 98%;
     background-color: #383838;
     color: white;
 }
 
+.footer::after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.column {
+    position: relative;
+    align-content: center;
+
+    &_1 {
+        float: left;
+        width: 33%;
+    }
+    &_2 {
+        display: inline-block;
+        width: 33%;
+    }
+    &_3 {
+        float: right;
+        width: 33%;
+    }
+}
+
+.copyright-row {
+    background-color: black;
+    color: white;
+    display: flex;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 25%;
+    width: 98%;
+}
