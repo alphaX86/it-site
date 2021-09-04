@@ -4,12 +4,7 @@
         <script src="https://kit.fontawesome.com/d294cf5192.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href='../CSS/main.css'>
         <?php
-            include '../dbConnect.php';
-            if(isset($_POST['statusChange']))
-                $statusChange=$_POST['statusChange'];
-            else
-                $statusChange=$_GET['statusChange'];
-            $initID=0;
+            $statusChange=$_GET['statusChange'];
             if($statusChange=='Del'){
                 $id=$_POST['id'];
                 $isLink=$_POST['isLink'];               
@@ -122,6 +117,13 @@
         <?php include './header.php'?>
         <div class='admin-flash'>
             <div class='admin-flash-present'>
+                <li class="admin-flash-present_item admin-edit-button">
+                    <?php $status='add'; 
+                    echo "<a href='../admin/flashNewsData/add' class='admin-edit-button admin-flash-present_add'>";?>
+                        <i class="fas fa-plus"></i>                    
+                        <strong class="admin-flash-present_item_news">ADD NEWS</strong>
+                    </a>
+                </li>
                 <?php
                     $sql ="SELECT * FROM `flashNews`";
                     $result = $conn->query($sql);
@@ -143,55 +145,41 @@
                 </li>
             </div>
             <div class='admin-flash-edit'>
-                <form action="http://localhost:3000/Admin/flashNews.php" method='post' class='admin-flash-edit_form' enctype="multipart/form-data">
-                    
-                    <?php
-                        if($statusChange!='newAdd'){
-                            echo '<div class="admin-flash-edit_item">
-                                    <strong class="admin-flash-edit_item_text">NEWS :</strong>
-                                    <input type="text" id="edit-news" name="news" class="admin-flash-edit_item_input"></input>
-                                </div>
-                                <div class="admin-flash-edit_item">
-                                    <strong class="admin-flash-edit_item_text">SOURCE :</strong>
-                                    <div id="source" class="admin-flash-edit_item_input">
-                                        
-                                    </div>
-                                </div>
-                                <div class="admin-flash-edit_buttons">                                    
-                                    <input type="radio"  name="id" id="edit-newsId" checked style="visibility:hidden">
-                                    <input type="radio"  name="isLink"  id="edit-isLink" checked style="visibility:hidden">
-                                    <input type="radio" value="Upd" id="confirm" name="statusChange" style="visibility:hidden">
-                                    <input type="radio" value="Del" id="delete" name="statusChange" style="visibility:hidden">
-                                    <button type="submit" onclick="checkUpd()" class="admin-flash-edit_confirm"><i class="fas fa-wrench fa-4x"></i></button>
-                                    <button type="submit" onclick="checkDel()" class="admin-flash-edit_delete"><i class="fas fa-trash-alt fa-4x"></i></button>
-                                </div>';
-                        }else{ 
-                            echo '<div class="admin-flash-edit_item">
-                                    <strong class="admin-flash-edit_item_text">NEWS :</strong>
-                                    <input type="text"name="news" class="admin-flash-edit_item_input" required></input>
-                                </div>
-                                <div class="admin-flash-edit_item">
-                                    <strong class="admin-flash-edit_item_text">SOURCE :</strong>
-                                    <div id="source" class="admin-flash-edit_item_input">
-                                        
-                                    </div>                           
-                                </div>
-                                <div class="admin-flash-edit_item">
-                                    <input type="radio" id="pdf" onchange="radioChange()" value="0" name="isLink">PDF</input>
-                                    <input type="radio" value="1" onchange="radioChange()" name="isLink">LINK</input>
-                                    <input type="radio" id="NULL" onchange="radioChange()" value="-1" name="isLink" checked="checked">NULL</input>
-                                </div>
-                                <div class="admin-flash-edit_buttons">
-                                    <label for="ExpDate"><strong>EXP.Date : </strong></label>
-                                    <input type="date" id="edit-expDate" name="expDate" required ></input>
-                                    <input type="radio" value="Add" name="statusChange"checked style="visibility:hidden">
-                                    <input type="radio" value="'.$newId.'" name="id" checked style="visibility:hidden">
-                                    <button type="submit" value="" name="newAdd" class="admin-flash-edit_add"><i class="fas fa-plus-square fa-4x"></i></button>
-                                </div>';
-                        }
-                    ?>             
-
-                </form>
+                <?php
+                    if($statusChange!='add'){
+                        echo '<div class="admin-flash-edit_item">
+                                <strong class="admin-flash-edit_item_text">NEWS :</strong>
+                                <input type="text" id="edit-news" class="admin-flash-edit_item_input"></input>
+                            </div>
+                            <div class="admin-flash-edit_item">
+                                <strong class="admin-flash-edit_item_text">SOURCE :</strong>
+                                <input type="text" id="edit-link" class="admin-flash-edit_item_input"></input>
+                            </div>
+                            <div class="admin-flash-edit_buttons">
+                                <a href="#?statusChange=Upd"class="admin-flash-edit_confirm"><i class="fas fa-wrench fa-4x"></i></a>
+                                <a href="#?statusChange=Del"class="admin-flash-edit_delete"><i class="fas fa-trash-alt fa-4x"></i></a>
+                            </div>';
+                    }else{ 
+                        echo '<div class="admin-flash-edit_item">
+                                <strong class="admin-flash-edit_item_text">NEWS :</strong>
+                                <input type="text" id="edit-news" class="admin-flash-edit_item_input" required></input>
+                            </div>
+                            <div class="admin-flash-edit_item">
+                                <strong class="admin-flash-edit_item_text">SOURCE :</strong>
+                                <input type="text" id="edit-link" class="admin-flash-edit_item_input"></input>
+                            </div>
+                            <div class="admin-flash-edit_item">
+                                <input type="radio" value="PDF" name="Type">PDF</input>
+                                <input type="radio" value="Link" name="Type">LINK</input>
+                                <input type="radio" value="NULL" name="Type" checked="checked">NULL</input>
+                            </div>
+                            <div class="admin-flash-edit_buttons">
+                            <label for="ExpDate"><strong>EXP.Date : </strong></label>
+                            <input type="date" name="ExpDate" required ></input>
+                                <a href=""class="admin-flash-edit_add"><i class="fas fa-plus-square fa-4x"></i></a>
+                            </div>';
+                    }
+                ?>             
             </div>
         </div>
         <div class="admin-flash-add">
