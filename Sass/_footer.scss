@@ -4,7 +4,9 @@
     left: 0px;
     right: 0px;
     height: 25%;
+    padding: 10px 10px;
     width: 98%;
+    border-radius: 10px;
     background-color: #383838;
     color: white;
 }
@@ -18,7 +20,7 @@
 .column {
     position: relative;
     align-content: center;
-
+    padding: 10px 10px;
     &_1 {
         float: left;
         width: 33%;
@@ -36,6 +38,8 @@
 .copyright-row {
     background-color: black;
     color: white;
+    border-radius: 10px;
+    padding: 10px 10px;
     display: flex;
     bottom: 0px;
     left: 0px;

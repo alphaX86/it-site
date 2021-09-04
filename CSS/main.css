@@ -128,7 +128,9 @@
   left: 0px;
   right: 0px;
   height: 25%;
+  padding: 10px 10px;
   width: 98%;
+  border-radius: 10px;
   background-color: #383838;
   color: white;
 }
@@ -145,6 +147,7 @@
   position: relative;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 10px 10px;
 }
 
 .column_1 {
@@ -165,6 +168,8 @@
 .copyright-row {
   background-color: black;
   color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
