@@ -246,27 +246,35 @@
 
 .hod_column {
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 98%;
+  height: 45%;
 }
 
 .hod_column_1 {
-  width: 40%;
+  width: 20%;
   float: left;
   padding: 10px 10px;
+  border: 2px solid black;
 }
 
 .hod_column_2 {
-  width: 60%;
+  width: 50%;
   float: right;
   padding: 10px 10px;
+  border: 2px solid black;
 }
 
 .hod_content {

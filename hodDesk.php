@@ -8,15 +8,17 @@
     <div class='site'>
         <?php include 'header.php'?>
         <h2>HOD's Desk</h2>
-        <div class="hod_column_1">
-            Picture here...
-            Check
-        </div>
-        <div class="hod_column_2">
-            <b>Dr. Dhananjay Kumar</b> <br>
-            Professor & Head , Department of Information Technology, <br>
-            Madras Institute of Technology campus, <br>
-            Anna University, Chennai. <br>
+        <div class="hod_column">
+            <div class="hod_column_1">
+                Picture here... <br>
+                Check
+            </div>
+            <div class="hod_column_2">
+                <b>Dr. Dhananjay Kumar</b> <br>
+                Professor & Head , Department of Information Technology, <br>
+                Madras Institute of Technology campus, <br>
+                Anna University, Chennai. <br>
+            </div>
         </div>
         <div class="hod_content">
         <p>
