@@ -1,1 +1,33 @@
+.hod {
+    display: flex;
 
+    &_column {
+        position: relative;
+        flex-direction: row;
+        flex-basis: 100%;
+        align-content: center;
+        justify-content: space-around;
+        display:flex;
+        width:98%;
+        height:45%;
+        
+        &_1 {
+            width: 20%;
+            float: left;
+            padding: 10px 10px;
+            border:2px solid black;
+        }
+
+        &_2 {
+            width: 50%;
+            float: right;
+            padding: 10px 10px;
+            border:2px solid black;
+        }
+    }
+
+    &_content {
+        align-content: center;
+        padding: 20px 20px;
+    }
+}
