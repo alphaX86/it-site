@@ -129,7 +129,7 @@
                         $initID=$row["newsID"];
                         echo '<li class="admin-flash-present_item">
                                 <p class="admin-flash-present_item_news">'.$row["news"].'</p>
-                                <i class="fas fa-pen-square fa-2x admin-edit-button" onclick="Edit('.$row["newsID"].',`'.$row["news"].'`,`'.$row["link"].'`,'.$row["isLink"].')"></i> 
+                                <i class="fas fa-pen-square fa-2x admin-flash-present_item_button" onclick="Edit('.$row["newsID"].',`'.$row["news"].'`,`'.$row["link"].'`,'.$row["isLink"].')"></i> 
                             </li>';
                     }
                 ?>                
@@ -143,7 +143,7 @@
                 </li>
             </div>
             <div class='admin-flash-edit'>
-                <form action="http://localhost:3000/Admin/flashNews.php" method='post' class='admin-flash-edit_form' enctype="multipart/form-data">
+                <form action="http://localhost:3000/Admin/flashNews.php" class='admin-flash-edit_form' method='post' enctype="multipart/form-data">
                     
                     <?php
                         if($statusChange!='newAdd'){

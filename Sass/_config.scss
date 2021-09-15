@@ -1,7 +1,12 @@
 $themeColors: ( "primary":red, "light":blue, "text-primary":white);
 $menuColors:("bg":blue, "text":white, "hover":grey);
+$adminColors:("edit":#bf1d0c, "add":#6fe222, "select":#6fe222);
 @function theme($color) {
     @return map-get($themeColors, $color);
+}
+
+@function admin($color) {
+    @return map-get($adminColors, $color);
 }
 
 @function menuColor($color) {
