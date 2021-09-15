@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^admin/([a-zA-Z0-9]+)/$ admin/flashNews.php?statusChange=$1
+RewriteRule ^/admin/flashNewsData/([a-zA-Z0-9]+) /test-page/test.php [NC,L]

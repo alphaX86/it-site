@@ -32,25 +32,25 @@
             if(!isset($_COOKIE['addedCol']))
                 setcookie("addedCol", "", time() + (900), "/");
             echo $editingFID;
+            echo $editStatus;
             if($editStatus=='Upd'){
                 echo $updStage;
-                if($updStage=='done'&&$change==1){
+                if($updStage=='done'&&$change==-1){
                     echo " Hie";
-                    $sql = "SELECT *  FROM initData WHERE fields LIKE 'extraCol'";
+                    $sql = "SELECT * FROM `initData` ";
                     $result = $conn->query($sql);
                     $row=$result->fetch_assoc();
+                    echo "Prode";
                     echo $row['details'];
-                    $isPresent=false;
+                    $isPresent=0;
                     if(strlen($row['details'])>1) 
-                        $isPresent=true;
+                        $isPresent=1;
                     $present=explode('#',$row['details']);
                     $toAdd="";
                     if($_COOKIE['changedRows']!=""){
                         $changedRows=explode('#',($_COOKIE['changedRows'])) ;
-                        for($i=0;$i<$changedRows.length();$i++){
-                            $col=$_COOKIE[$changedRows[$i]];
-                            printf(""+$changedRows[$i]);
-                            printf(""+$col);                            
+                        for($i=0;$i<count($changedRows);$i++){
+                            $col=$_COOKIE[$changedRows[$i]];                           
                             if(in_array($changedRows[$i],$present)){
                                 $sql ="UPDATE ".$changedRows[$i]." SET `details` = '".$col." WHERE `fID`=".$editingFID;
                                 $result = $conn->query($sql);
@@ -60,18 +60,18 @@
                                     $result = $conn->query($sql);
                                     $row=$result->fetch_assoc();
                                     $cols=$row['extraCol'];
-                                    if(strlen($cols)<1)
+                                    if(strlen($cols)<=1)
                                         $cols=$_COOKIE['addedCol'];
                                     else    
                                         $cols=$cols."#".$_COOKIE['addedCol'];
-                                    $sql ="UPDATE ".$tableFDetail." SET `extraCol` = '".$cols." WHERE `fID`=".$editingFID;
+                                    $sql ="UPDATE ".$tableFDetail." SET `extraCol` = '".$cols."' WHERE `fID`=".$editingFID;
                                     $result = $conn->query($sql);
                                 }
                                 $sql="CREATE TABLE `".$changedRows[$i]."` ( `fID` INT NOT NULL  , `details` TEXT NULL , PRIMARY KEY (`fID`))";
                                 $result = $conn->query($sql);
-                                $sql="INSERT INTO `".$changedRows[$i]."` (`fID`, `details`) VALUES ('".$editingFID."', '".$col."') ENGINE = InnoDB;";
+                                $sql="INSERT INTO `".$changedRows[$i]."` (`fID`, `details`) VALUES ('".$editingFID."', '".$col."')";
                                 $result = $conn->query($sql);
-                                if(strlen($toAdd)<1)
+                                if(strlen($toAdd)<=1)
                                     $toAdd=$changedRows[$i];
                                 else    
                                     $toAdd="#"+$changedRows[$i];
@@ -80,11 +80,13 @@
                                 $editStatus="NULL";
                             }                
                         }
-                        if(strlen($toAdd)>1){
-                            $col=($isPresent)?(implode("#",$present))."#".$toAdd:$toAdd;
-                            $sql ="UPDATE `genralInfo` SET `details` = '".$col." WHERE field=`extraCol`";
+                        if(strlen($toAdd)>1){   
+                            $coltoAdd=($isPresent)?((implode("#",$present))."#".$toAdd):$toAdd;
+                            echo $coltoAdd;
+                            $sql ="UPDATE `initData` SET `details` = '".$coltoAdd."' WHERE fields=`extraCol`";
                             $result = $conn->query($sql);
                         }
+                        
                     }
                     setcookie("changedRows", "", time() + (900), "/");
                     setcookie("addedCol", "", time() + (900), "/");
@@ -234,8 +236,10 @@
                     }
                 }
                 setCookie("changedRows",""+changedR);
-                setCookie("addedCol",""+document.getElementById('addedCol').value);
-                document.getElementById("changeS").checked=true;
+                let s=document.getElementById('addedCol').value;
+                console.log(s);
+                setCookie("addedCol",s);
+                document.getElementById("changeC").checked=true;
                 document.getElementById("stageD").checked=true;
                 submitForm();
             }
@@ -414,6 +418,7 @@
                 ?>
                 <div style="display:none">
                     <input type="radio" value="1" name="change" id="changeS">
+                    <input type="radio" value="-1" name="change" id="changeC">
                     <input type="radio" value="0" name="change" id="changeP" checked>
                     <input type="radio" value="basic" name="updStage" id="stageB">
                     <input type="radio" value="advanced" name="updStage" id="stageA">

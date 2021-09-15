@@ -1,5 +1,6 @@
 .tabs {
     display: flex;
+    grid-column: 1/-1;
     justify-content: space-between;
     padding: 5px;
     border: 2px solid black;
