@@ -3,6 +3,7 @@
 @import 'footer';
 @import 'aboutUs';
 @import 'hodDesk';
+@import 'gallery';
 @import'../Admin/Sass/admin';
 html {
     font-size: 18px;
@@ -34,4 +35,9 @@ a {
 li,
 ul {
     list-style-type: none;
+}
+
+h1 {
+    color:#B74F6F;
+    text-align: center;
 }
