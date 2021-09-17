@@ -1,0 +1,36 @@
+<!-- 
+                    <?php
+                        
+                        /*
+                            Table 'Gallery' with columns 'ID', 'Name' (heading) and 'path'
+                            Fetch the 'Name' and 'path'
+                            Table to be created and data to be added 
+                        */
+                        
+                        $sql = "SELECT name, path FROM Gallery";
+                        $result=$conn->query($sql);
+
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()) {
+
+                                $dir = $row["path"];
+
+                                echo "<h2>" . $row["name"]. "</h2>";
+                                
+                                if (is_dir($dir)){
+                                    if ($dh = opendir($dir)){
+                                        $a=scandir($dir);
+                                        echo '<div class="grid-container">';
+                                        foreach ($a as $b){
+                                            if($b!="." and $b!="..")
+                                                echo "<div><img src='$dir/$b'></img></div>";
+                                        }
+                                        echo "</div>";
+                                        closedir($dh);
+                                    }
+                                }
+                                echo "<br>";
+                            }
+                        }
+                    ?>
+                

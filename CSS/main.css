@@ -283,10 +283,6 @@
   padding: 20px 20px;
 }
 
-.grid-secHead {
-  color: #0C959C;
-}
-
 .grid-space {
   padding-left: 10%;
   padding-right: 10%;
@@ -563,5 +559,9 @@ ul {
 h1 {
   color: #B74F6F;
   text-align: center;
+}
+
+h2 {
+  color: #0C959C;
 }
 /*# sourceMappingURL=main.css.map */
