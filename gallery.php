@@ -5,7 +5,8 @@
         <link rel="stylesheet" href='./css/main.css'>
     </head>
     <body>
-        <!-- <div class='site'> -->
+        <div class='site'> 
+
             <?php include 'header.php'?>
 
             <h1>OUR GALLERY</h1>
@@ -69,7 +70,7 @@
 
 
             <?php include 'footer.php'?>
-        <!-- </div> -->
+        </div>
     </body>
 
 
