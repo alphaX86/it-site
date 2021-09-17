@@ -17,7 +17,7 @@
                     <br>
                     
                     <!-- php/sql part starts -->
-                    <h2>Part 1</h2>
+                    <h2>Part 1</h2> <!-- for testing -->
                     <div class="grid-container">
                         <div>1</div>
                         <div>2</div>
@@ -30,9 +30,9 @@
                     
                     <!-- include DB part php for gallery here -->
                     <!-- gallerySqlPart.txt -->
-
+                    <!-- keep the other 3 parts for testing -->
                     
-                    <h2>Trial Part</h2>
+                    <h2>Trial Part</h2>  <!-- for testing -->
                     <div class="grid-container">
                         <?php
                                 $dir = "./Images/Gallery/01_Dept";
@@ -51,7 +51,7 @@
                     </div>
                     <br>
 
-                    <h2>Part 2</h2>
+                    <h2>Part 2</h2>  <!-- for testing -->
                     <div class="grid-container">
                         <div>1</div>
                         <div>2</div>
