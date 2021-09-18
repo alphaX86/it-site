@@ -82,8 +82,8 @@
                         }
                         if(strlen($toAdd)>1){   
                             $coltoAdd=($isPresent)?((implode("#",$present))."#".$toAdd):$toAdd;
-                            echo $coltoAdd;
-                            $sql ="UPDATE `initData` SET `details` = '".$coltoAdd."' WHERE fields=`extraCol`";
+                            echo "Final List".$coltoAdd;
+                            $sql ="UPDATE `initData` SET `details` = '".$coltoAdd."' WHERE fields=`extraCol`;";
                             $result = $conn->query($sql);
                         }
                         

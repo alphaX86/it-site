@@ -137,7 +137,7 @@
                 ?>                
                 <li class="admin-flash-present_item admin-edit-button">
                     <?php  
-                        echo '<a href="http://localhost:3000/Admin/flashNews.php?statusChange=newAdd&id='.($initID+1).'" class="admin-edit-button admin-flash-present_add">
+                        echo '<a href="http://localhost:3020/Admin/flashNews.php?statusChange=newAdd&id='.($initID+1).'" class="admin-edit-button admin-flash-present_add">
                             <i class="fas fa-plus"></i>                    
                             <strong class="admin-flash-present_item_news">ADD NEWS</strong>
                         </a>';
@@ -145,7 +145,7 @@
                 </li>
             </div>
             <div class='admin-flash-edit'>
-                <form action="http://localhost:3000/Admin/flashNews.php" class='admin-flash-edit_form' method='post' enctype="multipart/form-data">
+                <form action="http://localhost:3020/Admin/flashNews.php" class='admin-flash-edit_form' method='post' enctype="multipart/form-data">
                     
                     <?php
                         if($statusChange!='newAdd'){
