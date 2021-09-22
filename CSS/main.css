@@ -15,6 +15,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  grid-row: 1;
   overflow-anchor: center;
 }
 
@@ -131,6 +134,8 @@
   padding: 10px 10px;
   width: 98%;
   border-radius: 10px;
+  grid-column: 1/-1;
+  grid-row: -1;
   background-color: #383838;
   color: white;
 }
@@ -506,6 +511,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  grid-template: rows auto 20;
   height: 100%;
 }
 
