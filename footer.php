@@ -1,3 +1,3 @@
 <div class="footer">
-    SAMPLE
+    Sample
 </div>

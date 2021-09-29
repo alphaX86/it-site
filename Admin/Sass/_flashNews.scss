@@ -1,124 +1,124 @@
-    .admin-flash {
-        grid-column: 1/-1;
-        //width: 80%;
-        height: 80vh;
-        padding: 10px;
-        margin: 10px;
-        border: 2px solid black;
-        border-radius: 15px;
+.admin-flash {
+    grid-column: 1/-1;
+    grid-row: 2;
+    height: 80vh;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    background-color: #b5e4e6;
+    &-present {
+        width: 50%;
+        height: 95%;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        font-size: 12px;
-        background-color: #b5e4e6;
-        &-present {
-            width: 50%;
-            height: 95%;
+        border: 2px solid black;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 3px;
+        background-color: white;
+        &_item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 10%;
+            width: 97%;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 2px 5px;
+            color: black;
+            &_button:hover {
+                color: admin(edit);
+                cursor: pointer;
+            }
+            &_news {
+                color: black;
+            }
+        }
+        &_item:last-child {
+            justify-content: center;
+            &_news {
+                font-size: 18px;
+            }
+            &:hover {
+                background-color: admin(add);
+                cursor: pointer;
+            }
+        }
+        &_add {
+            text-align: center;
+            color: black;
+        }
+    }
+    &-edit {
+        width: 47%;
+        height: 40%;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: white;
+        &_form {
+            height: 90%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            border: 2px solid black;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            padding: 3px;
-            background-color: white;
-            &_item {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                height: 10%;
-                width: 97%;
-                border: 1px solid black;
+            padding: 2px;
+        }
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            width: 97%;
+            height: 20%;
+            &_text {
+                width: 30%;
+            }
+            &_input {
+                width: 90%;
+                padding: 2px 7px;
+                height: 50%;
                 border-radius: 10px;
-                padding: 2px 5px;
-                color: black;
-                &_button:hover {
-                    color: admin(edit);
-                    cursor: pointer;
-                }
-                &_news {
-                    color: black;
-                }
-            }
-            &_item:last-child {
-                justify-content: center;
-                &_news {
-                    font-size: 18px;
-                }
-                &:hover {
-                    background-color: admin(add);
-                    cursor: pointer;
-                }
-            }
-            &_add {
-                text-align: center;
-                color: black;
             }
         }
-        &-edit {
-            width: 47%;
-            height: 40%;
-            border: 2px solid black;
-            border-radius: 10px;
-            background-color: white;
-            &_form {
-                height: 90%;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 2px;
-            }
-            &_item {
-                display: flex;
-                justify-content: space-between;
-                flex-direction: row;
-                align-items: center;
-                width: 97%;
-                height: 20%;
-                &_text {
-                    width: 30%;
-                }
-                &_input {
-                    width: 90%;
-                    padding: 2px 7px;
-                    height: 50%;
-                    border-radius: 10px;
-                }
-            }
-            &_buttons {
-                width: 98%;
-                height: 25%;
-            }
-            &_delete {
-                color: red;
-                position: relative;
-                left: 50px;
-                top: 10px;
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
-            }
-            &_confirm {
-                color: black;
-                position: relative;
-                left: 200px;
-                top: 10px;
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
-            }
-            &_add {
-                color: black;
-                position: relative;
-                left: 15%;
-                height: 90%;
-                background-color: transparent;
-                border: none;
-            }
-            &_add:hover {
-                color: green;
-                cursor: pointer;
-            }
+        &_buttons {
+            width: 98%;
+            height: 25%;
+        }
+        &_delete {
+            color: red;
+            position: relative;
+            left: 50px;
+            top: 10px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        &_confirm {
+            color: black;
+            position: relative;
+            left: 200px;
+            top: 10px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        &_add {
+            color: black;
+            position: relative;
+            left: 15%;
+            height: 90%;
+            background-color: transparent;
+            border: none;
+        }
+        &_add:hover {
+            color: green;
+            cursor: pointer;
         }
     }
+}

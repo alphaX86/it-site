@@ -1,12 +1,8 @@
 .footer {
-    display: flex;
     grid-column: 1/-1;
     grid-row: -1;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    height: 25%;
-    width: 97%;
-    background-color: #383838;
-    color: white;
+    height: 20vh;
+    width: 100%;
+    border: 1px solid black;
+    color: black;
 }
