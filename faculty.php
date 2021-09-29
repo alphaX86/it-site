@@ -3,6 +3,7 @@
     <head>
         <script src="https://kit.fontawesome.com/d294cf5192.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href='./CSS/main.css'>
+        <script src="./Js/main.js" type="text/javascript"></script>
     <?php 
         include 'dbConnect.php';
         $tableFName="`factulty`";
@@ -97,17 +98,6 @@
                 ?>       
 
             </div>
-            <form id="staffDisplay" action='facultyDetails.php' method='post' enctype="multipart/form-data" style="display:none;">
-                    <input type="text" id="fName" name="fName"></input>
-                    <input type="text" id="fDesig" name="fDesig"></input>
-                    <input type="text" id="fEmail" name="fEmail"></input>
-                    <input type="text" id="fImage" name="fImage"></input>
-                    <input type="text" id="fType" name="fType"></input>
-                    <input type="tel" id="fPhone" name='fPhone'></input>
-                    <input type="number" id="fID" name="fID"></input>
-
-            </form>
-
         </div>   
         
         <?php include 'footer.php'?>
@@ -122,14 +112,14 @@
             current=id;
         }
         function dispFac(name,desig,email,phone,img,type,id){
-            document.getElementById('fName').value=name;
-            document.getElementById('fDesig').value=desig;
-            document.getElementById('fEmail').value=email;
-            document.getElementById('fPhone').value=phone;
-            document.getElementById('fImage').value=img;
-            document.getElementById('fType').value=type;
-            document.getElementById('fID').value=id;
-            document.getElementById("staffDisplay").submit(); 
+            setCookie("fName",name);
+            setCookie("fDesig",desig);
+            setCookie("fEmail",email);
+            setCookie("fPhone",phone);
+            setCookie("fImage",img);
+            setCookie("fType",type);
+            setCookie("fID",id);
+            location.replace("./facultyDetails.php");
         }
     </script>
 

@@ -5,13 +5,13 @@
         <link rel="stylesheet" href='./CSS/main.css'>
     <?php 
         include 'dbConnect.php';
-        $fName=$_POST["fName"];
-        $fImg=$_POST["fImage"];
-        $fDesig=$_POST["fDesig"];
-        $fType=$_POST["fType"];
-        $fID=$_POST["fID"];
-        $fPhone=$_POST["fPhone"];
-        $fEmail=$_POST['fEmail'];
+        $fName=$_COOKIE["fName"];
+        $fImg=$_COOKIE["fImage"];
+        $fDesig=$_COOKIE["fDesig"];
+        $fType=$_COOKIE["fType"];
+        $fID=$_COOKIE["fID"];
+        $fPhone=$_COOKIE["fPhone"];
+        $fEmail=$_COOKIE['fEmail'];
         $sql='SELECT * FROM `facultyDetails` WHERE `fID` = '.$fID.' AND `type` = '.$fType;
         $result = $conn->query($sql);
         $row=$result->fetch_assoc();
@@ -76,6 +76,7 @@
 
             </div>
             <?php
+            if($populate)
             for($i=0;$i<count($fExtra);$i++){
                 $col=$fExtra[$i];
                 $sql='SELECT `details` FROM `'.$col.'` WHERE `fID` = '.$fID;
