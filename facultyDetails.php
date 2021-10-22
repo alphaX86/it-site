@@ -115,6 +115,7 @@
                 document.getElementById(current).style.visibility='hidden';            
             document.getElementById(id).style.visibility='visible';
             document.getElementById(id).style.height='70vh';
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'center' });
             current=id;
         }
     </script>

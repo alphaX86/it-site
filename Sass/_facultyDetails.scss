@@ -78,6 +78,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: min(3vh, 2vw);
     }
     &-item:hover {
         cursor: pointer;

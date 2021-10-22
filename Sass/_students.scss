@@ -1,1 +1,11 @@
-
+.student {
+    height: max-content; //80vh;
+    display: grid;
+    border: 0.1vh solid black;
+    grid-template-columns: 20vw auto;
+    grid-template-rows: 5vh 20vh max-content;
+    grid-column: 1/-1;
+    grid-column-gap: 5%;
+    grid-row-gap: 3%;
+    padding: 2% 4% 5% 2%;
+}

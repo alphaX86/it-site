@@ -31,8 +31,8 @@
                     <p>Non-Technical Staff</p>
                 </div>
                 <div class="faculty-types" onclick="makeVisible('formalHOD')">
-                    <i class="fas fa-school"></i>
-                    <p>Formal HOD</p>
+                    <i class="fas fa-user-tie"></i>
+                    <p>Former HOD</p>
                 </div>     
 
             </div>

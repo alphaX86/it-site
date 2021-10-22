@@ -575,6 +575,7 @@ user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: min(3vh, 2vw);
 }
 .facultyColList-item:hover {
   cursor: pointer;
@@ -612,6 +613,91 @@ user-select: none;
 .facultyDispCol-list li detail {
   width: 96%;
   font-size: min(1.5vw, 2.2vh);
+}
+
+.curriculum {
+  height: max-content;
+  display: grid;
+  border: 0.1vh solid black;
+  grid-template-columns: 20vw auto;
+  grid-template-rows: 5vh 20vh max-content;
+  grid-column: 1/-1;
+  grid-column-gap: 5%;
+  grid-row-gap: 3%;
+  padding: 2% 4% 5% 2%;
+}
+.curriculum-title {
+  font-size: min(2.5vw, 4vh);
+  grid-column: 1/-1;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.curriculum-opt {
+  border: 0.1vh solid black;
+  display: grid;
+  grid-template-rows: repeat(1fr, 3);
+  padding: 3% 2%;
+  grid-row-gap: 3%;
+  font-size: min(1.2vw, 2vh);
+}
+.curriculum-opt-list {
+  border: 0.1vh solid black;
+  border-radius: 1vh;
+  display: flex;
+  padding: 0% 20%;
+  align-items: center;
+  justify-content: space-around;
+}
+.curriculum-opt-list i {
+  font-size: min(3vh, 1.85vw);
+}
+.curriculum-opt-list:hover {
+  cursor: pointer;
+  box-shadow: 0.2vw 0.2vh black;
+  transform: translateY(-4.5%);
+}
+.curriculum-display {
+  grid-column: 2;
+  grid-row: 2/-1;
+}
+.curriculum-opt-sub {
+  border: 0.1vh solid black;
+  visibility: hidden;
+  grid-column: 1;
+  grid-row: 3;
+  z-index: 1;
+  overflow-y: scroll;
+  display: grid;
+  padding: 4% 1% 2% 5%;
+  grid-template-rows: repeat(auto-fill, 5vh);
+  grid-row-gap: 1.5%;
+  font-size: min(2.2vh, 1.3vw);
+}
+.curriculum-opt-sub-list {
+  border: 0.1vh solid black;
+  border-radius: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.curriculum-opt-sub-list:hover {
+  cursor: pointer;
+  background-color: #b7d2f1;
+  color: #0f62bf;
+}
+
+.student {
+  height: max-content;
+  display: grid;
+  border: 0.1vh solid black;
+  grid-template-columns: 20vw auto;
+  grid-template-rows: 5vh 20vh max-content;
+  grid-column: 1/-1;
+  grid-column-gap: 5%;
+  grid-row-gap: 3%;
+  padding: 2% 4% 5% 2%;
 }
 
 .footer {
