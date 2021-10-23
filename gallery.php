@@ -66,18 +66,14 @@
             </div> 
             
             <br>
-           
 
-
-
+            
             <?php include 'footer.php'?>
         </div>
     </body>
 
 
-    <!--  
-        https://www.w3schools.com/php/func_directory_readdir.asp
-    -->
+ 
 </html>
 
 

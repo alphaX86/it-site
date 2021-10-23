@@ -4,6 +4,7 @@
 @import 'aboutUs';
 @import 'hodDesk';
 @import 'gallery';
+@import 'placements';
 @import'../Admin/Sass/admin';
 html {
     font-size: 18px;
@@ -45,3 +46,20 @@ h1 {
 h2 {
     color: #0C959C;
   }
+
+h3 {
+    color:#B74F6F;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+td{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}

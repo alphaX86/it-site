@@ -1,1 +1,136 @@
 
+/* for pie chart */
+
+.grid-container-pie {
+    display: grid;
+    grid-template-columns: 37vw auto;    
+    grid-gap: 15px;  
+}
+
+.grid-container-pie > div {
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.pie-chart {
+	background:
+		radial-gradient(
+			circle closest-side,
+			transparent 66%,
+			white 0
+		),
+		conic-gradient(
+			#4e79a7 0,
+			#4e79a7 25%,
+			#f28e2c 0,
+			#f28e2c 75%,
+    	);
+	position: relative;
+	min-height: 350px;
+	margin: 0;
+    outline: 3px solid black;
+}
+
+.pie-chart figcaption {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	font-size: smaller;
+	text-align: right;
+}
+
+.pie-chart span:after {
+	display: inline-block;
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: 0.4em;
+	height: 0.8em;
+	border-radius: 0em;
+	background: currentColor;
+}
+
+/* for bar graphs */
+
+* { box-sizing: border-box; }
+
+.grid-chart {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(130, 1fr);
+  grid-column-gap: 15px;
+  height: 350px;
+  width: 70vw;
+  padding: 5px 10px;
+  
+  [class*="bar"] {
+  	border-radius: 5px 5px 0 0;
+  	transition: all .6s ease;
+  	background-color: #B74F6F;
+  	grid-row-start: 1;
+  	grid-row-end: 131;
+  }
+
+  $totalRows: 131;
+
+  @mixin chartValue($data) {
+  	$result: $totalRows - $data;
+  	grid-row-start: $result;
+  }
+
+  @for $i from 1 through $totalRows {
+  	.bar-#{$i} {
+    	@include chartValue($i);
+  	}
+  }
+}
+
+
+.Barchart
+{	display: grid;
+	grid-template-columns: repeat(10,1fr);
+	grid-template-rows: repeat(10,1fr);
+	&-grid{border:1px solid black};
+	grid-row: 1;
+	grid-column: 1;
+
+}
+
+.Barchart-grid::after{
+	content: attr(indicator)" ";
+	position: absolute;
+	transform: translate(-2.5vw,-1.5vh);
+}
+
+.Bar
+{	display:grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 400px;
+}
+
+.graphs
+{	display: grid;
+	grid-row: 1;
+	grid-column: 1;
+	grid-template-columns: repeat(10,5vw);
+	grid-template-rows: repeat(10,1fr);
+	grid-column-gap: 2.2vw;
+	//z-index: +3;
+	border: 2px solid black;
+	padding-left: 0.8vw;
+}
+
+.graphEle
+{	border: 1px solid black;
+	background-color: rosybrown;
+	//grid-column: 1;
+	//grid-row: 1/-1;
+	&::after{
+		content: attr(graph-title)" ";
+		position: absolute;
+		
+	}
+}
+
