@@ -3,16 +3,14 @@
 
 .grid-container-pie {
     display: grid;
-    grid-template-columns: 37vw auto;    
+    grid-template-columns: 30vw auto;    
     grid-gap: 15px;  
 }
 
 .grid-container-pie > div {
   text-align: center;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
+  padding: 3px;
 }
-
 
 .pie-chart {
 	background:
@@ -28,7 +26,7 @@
 			#f28e2c 75%,
     	);
 	position: relative;
-	min-height: 350px;
+	min-height: 300px;
 	margin: 0;
     outline: 3px solid black;
 }
@@ -53,40 +51,6 @@
 }
 
 /* for bar graphs */
-
-* { box-sizing: border-box; }
-
-.grid-chart {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(130, 1fr);
-  grid-column-gap: 15px;
-  height: 350px;
-  width: 70vw;
-  padding: 5px 10px;
-  
-  [class*="bar"] {
-  	border-radius: 5px 5px 0 0;
-  	transition: all .6s ease;
-  	background-color: #B74F6F;
-  	grid-row-start: 1;
-  	grid-row-end: 131;
-  }
-
-  $totalRows: 131;
-
-  @mixin chartValue($data) {
-  	$result: $totalRows - $data;
-  	grid-row-start: $result;
-  }
-
-  @for $i from 1 through $totalRows {
-  	.bar-#{$i} {
-    	@include chartValue($i);
-  	}
-  }
-}
-
 
 .Barchart
 {	display: grid;
@@ -129,8 +93,66 @@
 	//grid-row: 1/-1;
 	&::after{
 		content: attr(graph-title)" ";
-		position: absolute;
+		position: absolute; 
 		
 	}
 }
 
+/* Highers Stats */
+.table-striped{
+	text-align: center;
+	padding: 10px;
+	thead { color:#424242; font-size:12pt; }
+	tbody { 
+		color:#212121; 
+		font-size:11pt;  
+		tr:nth-child(odd) {background-color:rgb(197, 235, 240);}
+	}
+	
+}
+
+/* Dynamic part */
+
+.highers {
+    border: 1px solid black;
+    grid-column: 1/-1;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 1fr 4fr;
+    grid-column-gap: 3%;
+    padding: 2%;
+    .hYears {
+        // border: 1px solid black;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 3%;
+        padding: 5% 0;
+        .hYrs {
+            border: 0.1vh solid black;
+            border-radius: 1vh;
+            display: flex;
+            align-items: center;
+            font-size: min(1.2vw, 2vh);
+            justify-content: space-around;
+        }
+        .hYrs:hover {
+            box-shadow: 0.2vw 0.4vh #b3b3b3;
+            cursor: pointer;
+            transform: translateY(-2%);
+        }
+    }
+    .highers-list {
+        border: 1px solid black;
+        display: grid;
+        grid-column: 2;
+        grid-row: 1/-1;
+        grid-template-rows: auto-fill;
+        grid-template-columns: repeat(4, 0.8fr);
+        grid-gap: 2% 2%;
+        padding: 2%;
+        overflow-y: scroll;
+        visibility: hidden;
+        
+    }
+}
