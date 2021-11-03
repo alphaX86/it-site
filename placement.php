@@ -4,7 +4,28 @@
         <script src="https://kit.fontawesome.com/d294cf5192.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <link rel="stylesheet" href='./css/main.css'>
-        
+        <script>
+        var yearIds = ["y1819", "y1718", "y1617", "y1516", "y1415"];
+        var  currentVisible = null;
+        function toggleVisibility(divId) 
+        {   if(currentVisible === divId) 
+            {   currentVisible = null;  } 
+            else 
+            {   currentVisible = divId; }
+            hideNonVisibleDivs();
+        }
+        function hideNonVisibleDivs() 
+        {   var i, divId, div;
+            for(i = 0; i < yearIds.length; i++) 
+            {   divId = yearIds[i];
+                div = document.getElementById(divId);
+                if(currentVisible === divId) 
+                {   div.style.display = "block"; } 
+                else 
+                {   div.style.display = "none";  }
+            }
+        }
+        </script>
     </head>
     <body>
                
@@ -27,7 +48,7 @@
                             </figcaption>
 	                        </figure>
                         </div>
-                        <div style="padding:13px; background-color: rgba(255, 255, 255, 0.8)">
+                        <div class="companies">
                             <h3>COMPANIES</h3>
                             <table>
                                 <colgroup>
@@ -79,41 +100,6 @@
                     </div>
                     <br><br>                             
                     
-                    <!-- BAR CHART AN IDEA - DON'T TOUCH THIS - PRESS F FOR SHANKAR -->
-                    <h2>PREVIOUS YEARS PLACEMENT STASTICS</h2>  
-                    <div class="Bar">    
-                        <div class="Barchart">
-                        <?php 
-                            for($i=0;$i<100;$i++)
-                                if($i%10==0)
-                                    echo "<div class='Barchart-grid' indicator='".(100-$i)."'></div>";
-                                else
-                                    echo "<div class='Barchart-grid' indicator=''></div>";
-                        ?>
-                        </div>
-                        <div class="graphs">
-                            <div class="graphEle" graph-title="a"></div>
-                            <div class="graphEle" graph-title="a"></div>
-                            <div class="graphEle" graph-title="a"></div>
-                            <div class="graphEle" graph-title="a"></div>
-                            <div class="graphEle" graph-title="a"></div>
-                            <div class="graphEle" graph-title="a"></div>
-                            <div class="graphEle" graph-title="a"></div>
-                            <div class="graphEle" graph-title="a"></div>
-                            <div class="graphEle" graph-title="a"></div>
-                            <div class="graphEle" graph-title="a"></div>
-                        </div>
-                        <script>
-                            let ele=document.getElementsByClassName("graphEle");
-                            let data=[10,20,30,40,50,60,70,80,90,100];
-                            for(let i=0; i<ele.length; i++)
-                            {   ele[i].style["grid-column"]=(i+1);
-                                ele[i].style["grid-row"]=((110-data[i])/10)+"/-1";
-                            }
-                        </script>
-                    </div>
-                    <br><br> 
-
                     <!-- BAR CHART FINAL - DON'T TOUCH THIS -->
                     <h2>PREVIOUS YEARS PLACEMENT STASTICS</h2>  
                     <canvas id="myChart2" width="50vw" height="20vh"></canvas>
@@ -225,52 +211,257 @@
                     <h2>HIGHER STUDIES DETAILS</h2>  
                     <div class="highers">
                         <div class="hYears">
-                            <div class="hYrs" onclick="makeVisible('y1819')">
+                            <div class="hYrs" onclick="toggleVisibility('y1819')">
                                 <p>2018 - 2019</p>
                             </div>
-                            <div class="hYrs" onclick="makeVisible('y1718')">
+                            <div class="hYrs" onclick="toggleVisibility('y1718')">
                                 <p>2017 - 2018</p>
                             </div>
-                            <div class="hYrs" onclick="makeVisible('y1617')">
+                            <div class="hYrs" onclick="toggleVisibility('y1617')">
                                 <p>2016 - 2017</p>
                             </div>
-                            <div class="hYrs" onclick="makeVisible('y1516')">
+                            <div class="hYrs" onclick="toggleVisibility('y1516')">
                                 <p>2015 - 2016</p>
                             </div>  
-                            <div class="hYrs" onclick="makeVisible('y1415')">
+                            <div class="hYrs" onclick="toggleVisibility('y1415')">
                                 <p>2014 - 2015</p>
                             </div>     
                         </div>
 
                         <div class="highers-list" id="y1819" >
-                        <?php                    
-                            $sql ='SELECT * FROM Highers WHERE `year` = 2019';
-                            $result = $conn->query($sql);
-                            $i=0;
-                            echo '<table class="table-striped" style="background-color: rgba(255, 255, 255, 0.6)">';
-                            echo '<thead>
-                                    <tr><th>S.No</th>
-                                        <th>Year of Passing</th>
-                                        <th>Name</th>
-                                        <th>Program Name</th>
-                                        <th>University</th>
-                                    </tr>
-                                </thead>';
-                            echo '<tbody>';
-                            while($row = $result->fetch_assoc()) {
-                                $Year=$row['year'];
-                                $Name=$row['name'];
-                                $Prog=$row['program'];
-                                $Uni=$row['university'];
-                                $i=$i+1;
-                                echo '<tr><td>`'.$i.'`</td>
-                                          <td>`'.$Year.'`</td>
-                                          <td>`'.$Name.'`</td>
-                                          <td>`'.$Prog.'`</td>
-                                          <td>`'.$Uni.'`</td></tr>';
-                            }
-                            echo '</tbody';
-                        ?>       
+                        <h3>2018 - 2019</h3>
+                        <table class="table-striped" style="background-color: rgba(255, 255, 255, 0.6)">
+                            <thead>
+                                <tr><th>S.No</th>
+                                    <th>Year of Passing</th>
+                                    <th>Name</th>
+                                    <th>Program Name</th>
+                                    <th>University</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td>
+                                    <td>2019</td>
+                                    <td>Rakshana.G</td>
+                                    <td>M. S-Computer Science & Systems</td>
+                                    <td>Tacoma University</td>
+                                </tr>
+                                <tr><td>2</td>
+                                    <td>2019</td>
+                                    <td>N.Nivethan</td>
+                                    <td>M.S -Computer Science</td>
+                                    <td>Arizona State University</td>
+                                </tr>
+                            </tbody>
+                        </table>     
+                        </div>
+
+                        <div class="highers-list" id="y1718" >
+                        <h3>2017 - 2018</h3>
+                        <table class="table-striped" style="background-color: rgba(255, 255, 255, 0.6)">
+                            <thead>
+                                <tr><th>S.No</th>
+                                    <th>Year of Passing</th>
+                                    <th>Name</th>
+                                    <th>Program Name</th>
+                                    <th>University</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td>
+                                    <td>2018</td>
+                                    <td>J Aravind</td>
+                                    <td>M.Tech Computer Science</td>
+                                    <td>VIT University, Chennai</td>
+                                </tr>
+                                <tr><td>2</td>
+                                    <td>2018</td>
+                                    <td>N.Srivatsan</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>North Carolina State University</td>
+                                </tr>
+                                <tr><td>3</td>
+                                    <td>2018</td>
+                                    <td>Roshini C</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>University of Southern California</td>
+                                </tr>
+                                <tr><td>4</td>
+                                    <td>2018</td>
+                                    <td>K.Kaviya</td>
+                                    <td>M.S -Computer Science</td>
+                                    <td>Arizona State University</td>
+                                </tr>
+                                <tr><td>5</td>
+                                    <td>2018</td>
+                                    <td>Vaidhehi V</td>
+                                    <td>M.S - Computer Science</td>
+                                    <td>Arizona State University</td>
+                                </tr>
+                            </tbody>
+                        </table>     
+                        </div>
+
+                        <div class="highers-list" id="y1617" >
+                        <h3>2016 - 2017</h3>
+                        <table class="table-striped" style="background-color: rgba(255, 255, 255, 0.6)">
+                            <thead>
+                                <tr><th>S.No</th>
+                                    <th>Year of Passing</th>
+                                    <th>Name</th>
+                                    <th>Program Name</th>
+                                    <th>University</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td>
+                                    <td>2017</td>
+                                    <td>Remo Antony</td>
+                                    <td>MBA</td>
+                                    <td>Anna University</td>
+                                </tr>
+                                <tr><td>2</td>
+                                    <td>2017</td>
+                                    <td>Preethi A</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>North Eastern University</td>
+                                </tr>
+                                <tr><td>3</td>
+                                    <td>2017</td>
+                                    <td>Vamsi Krishna</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>Iowa State University</td>
+                                </tr>
+                            </tbody>
+                        </table>     
+                        </div>
+
+                        <div class="highers-list" id="y1516" >
+                        <h3>2015 - 2016</h3>
+                        <table class="table-striped" style="background-color: rgba(255, 255, 255, 0.6)">
+                            <thead>
+                                <tr><th>S.No</th>
+                                    <th>Year of Passing</th>
+                                    <th>Name</th>
+                                    <th>Program Name</th>
+                                    <th>University</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td>
+                                    <td>2016</td>
+                                    <td>Avinash Venkatesh </td>
+                                    <td>MS - Computer Science</td>
+                                    <td>University of Texas Dallas</td>
+                                </tr>
+                                <tr><td>2</td>
+                                    <td>2016</td>
+                                    <td>Aditi Venugopalan</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>University of Texas Dallas</td>
+                                </tr>
+                                <tr><td>3</td>
+                                    <td>2016</td>
+                                    <td>Ananth Narayanan.R</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>Iowa State University</td>
+                                </tr>
+                                <tr><td>4</td>
+                                    <td>2016</td>
+                                    <td>Deepak Govind</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>Illinois Institute of Technology</td>
+                                </tr>
+                                <tr><td>5</td>
+                                    <td>2016</td>
+                                    <td>Dharanya.S </td>
+                                    <td>MBA</td>
+                                    <td>Pondicherry University</td>
+                                </tr>
+                            </tbody>
+                        </table>     
+                        </div>
+
+                        <div class="highers-list" id="y1415" >
+                        <h3>2014 - 2015</h3>
+                        <table class="table-striped" style="background-color: rgba(255, 255, 255, 0.6)">
+                            <thead>
+                                <tr><th>S.No</th>
+                                    <th>Year of Passing</th>
+                                    <th>Name</th>
+                                    <th>Program Name</th>
+                                    <th>University</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td>
+                                    <td>2015</td>
+                                    <td>Shankar M</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>Arizona State University</td>
+                                </tr>
+                                <tr><td>2</td>
+                                    <td>2015</td>
+                                    <td>Vandhana S</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>University of Southern California</td>
+                                </tr>
+                                <tr><td>3</td>
+                                    <td>2015</td>
+                                    <td>Abishek G</td>
+                                    <td>MS Ã¢Â€Â“Information Security</td>
+                                    <td>Carnegie Mellon University</td>
+                                </tr>
+                                <tr><td>4</td>
+                                    <td>2015</td>
+                                    <td>Arun Karthick M A M</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>Arizona State University</td>
+                                </tr>
+                                <tr><td>5</td>
+                                    <td>2015</td>
+                                    <td>Dhivashini J </td>
+                                    <td>MS- Software Engineering</td>
+                                    <td>San Jose University</td>
+                                </tr>
+                                <tr><td>6</td>
+                                    <td>2015</td>
+                                    <td>Renuka R</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>University of Southern California</td>
+                                </tr>  
+                                <tr><td>7</td>
+                                    <td>2015</td>
+                                    <td>Nishanthini D</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>University of Texas Dallas</td>
+                                </tr>
+                                <tr><td>8</td>
+                                    <td>2015</td>
+                                    <td>Manoj Shankar A J</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>Arizona State University</td>
+                                </tr>
+                                <tr><td>9</td>
+                                    <td>2015</td>
+                                    <td>Vishali S</td>
+                                    <td>MS - Computer Science</td>
+                                    <td>University of Southern California</td>
+                                </tr>
+                                <tr><td>10</td>
+                                    <td>2015</td>
+                                    <td>Imran Mohamed</td>
+                                    <td>M.Tech - Computer Science</td>
+                                    <td>IIT Roorkee</td>
+                                </tr>
+                                <tr><td>11</td>
+                                    <td>2015</td>
+                                    <td>Ponni Puviarasi</td>
+                                    <td>M.Tech</td>
+                                    <td>Anna University,CEG Campus</td>
+                                </tr>
+                            </tbody>
+                        </table>     
                         </div>
                     </div>
                     <br><br>

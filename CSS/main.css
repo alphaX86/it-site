@@ -355,66 +355,12 @@
   background: currentColor;
 }
 
-/* for bar graphs */
-.Barchart {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[10];
-      grid-template-columns: repeat(10, 1fr);
-  -ms-grid-rows: (1fr)[10];
-      grid-template-rows: repeat(10, 1fr);
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  grid-column: 1;
+.companies {
+  padding: 13px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.Barchart-grid {
-  border: 1px solid black;
-}
-
-.Barchart-grid::after {
-  content: attr(indicator) " ";
-  position: absolute;
-  -webkit-transform: translate(-2.5vw, -1.5vh);
-          transform: translate(-2.5vw, -1.5vh);
-}
-
-.Bar {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: 400px;
-      grid-template-rows: 400px;
-}
-
-.graphs {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-columns: (5vw)[10];
-      grid-template-columns: repeat(10, 5vw);
-  -ms-grid-rows: (1fr)[10];
-      grid-template-rows: repeat(10, 1fr);
-  grid-column-gap: 2.2vw;
-  border: 2px solid black;
-  padding-left: 0.8vw;
-}
-
-.graphEle {
-  border: 1px solid black;
-  background-color: rosybrown;
-}
-
-.graphEle::after {
-  content: attr(graph-title) " ";
-  position: absolute;
-}
-
+/* Highers Stats */
 .table-striped {
   text-align: center;
   padding: 10px;
@@ -432,6 +378,57 @@
 
 .table-striped tbody tr:nth-child(odd) {
   background-color: #c5ebf0;
+}
+
+/* Dynamic part */
+.highers {
+  grid-column: 1/-1;
+  height: 40vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 2fr;
+      grid-template-rows: 2fr 2fr;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  grid-column-gap: 3%;
+  padding: 10px;
+}
+
+.highers .hYears {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  grid-row-gap: 3%;
+  padding: 5% 0;
+}
+
+.highers .hYears .hYrs {
+  border: 1px solid black;
+  border-radius: 1px;
+  background-color: #c5ebf0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10pt;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.highers .hYears .hYrs:hover {
+  -webkit-box-shadow: 0.2vw 0.4vh #b3b3b3;
+          box-shadow: 0.2vw 0.4vh #b3b3b3;
+  cursor: pointer;
+  -webkit-transform: translateY(-2%);
+          transform: translateY(-2%);
+}
+
+.highers .highers-list {
+  overflow-y: scroll;
+  display: none;
 }
 
 .admin-nav {

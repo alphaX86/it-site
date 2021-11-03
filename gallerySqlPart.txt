@@ -1,4 +1,5 @@
-<!-- 
+// PHP For integrating fetch from SQL table 'Gallery' that contains path of folders 
+
                     <?php
                         
                         /*
@@ -33,4 +34,91 @@
                             }
                         }
                     ?>
-                
+
+
+// BAR CHART AN IDEA - DON'T TOUCH THIS - PRESS F FOR SHANKAR
+// PHP file
+
+                    <h2>PREVIOUS YEARS PLACEMENT STASTICS</h2>  
+                    <div class="Bar">    
+                        <div class="Barchart">
+                        <?php 
+                            for($i=0;$i<100;$i++)
+                                if($i%10==0)
+                                    echo "<div class='Barchart-grid' indicator='".(100-$i)."'></div>";
+                                else
+                                    echo "<div class='Barchart-grid' indicator=''></div>";
+                        ?>
+                        </div>
+                        <div class="graphs">
+                            <div class="graphEle" graph-title="a"></div>
+                            <div class="graphEle" graph-title="a"></div>
+                            <div class="graphEle" graph-title="a"></div>
+                            <div class="graphEle" graph-title="a"></div>
+                            <div class="graphEle" graph-title="a"></div>
+                            <div class="graphEle" graph-title="a"></div>
+                            <div class="graphEle" graph-title="a"></div>
+                            <div class="graphEle" graph-title="a"></div>
+                            <div class="graphEle" graph-title="a"></div>
+                            <div class="graphEle" graph-title="a"></div>
+                        </div>
+                        <script>
+                            let ele=document.getElementsByClassName("graphEle");
+                            let data=[10,20,30,40,50,60,70,80,90,100];
+                            for(let i=0; i<ele.length; i++)
+                            {   ele[i].style["grid-column"]=(i+1);
+                                ele[i].style["grid-row"]=((110-data[i])/10)+"/-1";
+                            }
+                        </script>
+                    </div>
+                    <br><br>                     
+
+// CSS for the above PHP - Press F for Shankar
+
+                    /* for bar graphs */
+
+                    .Barchart
+                    {	display: grid;
+                        grid-template-columns: repeat(10,1fr);
+                        grid-template-rows: repeat(10,1fr);
+                        &-grid{border:1px solid black};
+                        grid-row: 1;
+                        grid-column: 1;
+
+                    }
+
+                    .Barchart-grid::after{
+                        content: attr(indicator)" ";
+                        position: absolute;
+                        transform: translate(-2.5vw,-1.5vh);
+                    }
+
+                    .Bar
+                    {	display:grid;
+                        grid-template-columns: 100%;
+                        grid-template-rows: 400px;
+                    }
+
+                    .graphs
+                    {	display: grid;
+                        grid-row: 1;
+                        grid-column: 1;
+                        grid-template-columns: repeat(10,5vw);
+                        grid-template-rows: repeat(10,1fr);
+                        grid-column-gap: 2.2vw;
+                        //z-index: +3;
+                        border: 2px solid black;
+                        padding-left: 0.8vw;
+                    }
+
+                    .graphEle
+                    {	border: 1px solid black;
+                        background-color: rosybrown;
+                        //grid-column: 1;
+                        //grid-row: 1/-1;
+                        &::after{
+                            content: attr(graph-title)" ";
+                            position: absolute; 
+                            
+                        }
+                    }
