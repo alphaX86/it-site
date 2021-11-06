@@ -68,13 +68,13 @@
     border-radius: 1vh;
     overflow-y: scroll;
     display: grid;
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fill, min(4vw, 6vh));
     grid-row-gap: 1.5%; // align-items: center;
     padding: 2% 1%;
     &-item {
         border: 0.1vh solid black;
         border-radius: 1vh;
-        height: 6vh;
+        //height: 6vh;
         display: flex;
         align-items: center;
         justify-content: center;

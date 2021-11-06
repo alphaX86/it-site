@@ -40,7 +40,6 @@
                 <?php
                     
                     $sql ='SELECT * FROM '.$tableFName.' WHERE `type` = 1';
-                    echo '<script>console.log("'.$sql.'")</script>';
                     $result = $conn->query($sql);
                     while($row=$result->fetch_assoc()){
                         $Fid=$row['fID'];
@@ -72,7 +71,6 @@
                 <?php
                     
                     $sql ='SELECT * FROM '.$tableFName.' WHERE `type` = 0';
-                    echo '<script>console.log("'.$sql.'")</script>';
                     $result = $conn->query($sql);
                     while($row=$result->fetch_assoc()){
                         $Fid=$row['fID'];
@@ -93,7 +91,6 @@
                 <?php
                     
                     $sql ='SELECT * FROM '.$tableFName.' WHERE `type` = -1';
-                    echo '<script>console.log("'.$sql.'")</script>';
                     $result = $conn->query($sql);
                     while($row=$result->fetch_assoc()){
                         $Fid=$row['fID'];
@@ -123,25 +120,7 @@
         <?php include 'footer.php'?>
     </div>
     </body>
-    <script>
-        var current="teachStaff";
-        document.getElementById(current).style.visibility='visible';
-        function makeVisible(id){
-            document.getElementById(current).style.visibility='hidden';
-            document.getElementById(id).style.visibility='visible';
-            current=id;
-        }
-        function dispFac(name,desig,email,phone,img,type,id){
-            setCookie("fName",name);
-            setCookie("fDesig",desig);
-            setCookie("fEmail",email);
-            setCookie("fPhone",phone);
-            setCookie("fImage",img);
-            setCookie("fType",type);
-            setCookie("fID",id);
-            location.replace("./facultyDetails.php");
-        }
-    </script>
+    <script src="./Js/faculty.js" type="text/javascript" ></script>
 
 </html>
 

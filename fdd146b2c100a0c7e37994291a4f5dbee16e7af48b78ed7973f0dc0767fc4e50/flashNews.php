@@ -5,6 +5,7 @@
         <link rel="stylesheet" href='../CSS/main.css'>
         <?php
             include '../dbConnect.php';
+            $folderName='fdd146b2c100a0c7e37994291a4f5dbee16e7af48b78ed7973f0dc0767fc4e50';
             if(isset($_GET['statusChange']))
                 $statusChange=$_GET['statusChange'];
             else if(isset($_POST['statusChange']))
@@ -136,7 +137,7 @@
                 ?>                
                 <li class="admin-flash-present_item admin-edit-button">
                     <?php  
-                        echo '<a href="http://localhost:3020/Admin/flashNews.php?statusChange=newAdd&id='.($initID+1).'" class="admin-edit-button admin-flash-present_add">
+                        echo '<a href="http://localhost:3020/'.$folderName.'/flashNews.php?statusChange=newAdd&id='.($initID+1).'" class="admin-edit-button admin-flash-present_add">
                             <i class="fas fa-plus"></i>                    
                             <strong class="admin-flash-present_item_news">ADD NEWS</strong>
                         </a>';
@@ -144,7 +145,7 @@
                 </li>
             </div>
             <div class='admin-flash-edit'>
-                <form action="http://localhost:3020/Admin/flashNews.php" class='admin-flash-edit_form' method='post' enctype="multipart/form-data">
+                <form action="http://localhost:3020/fdd146b2c100a0c7e37994291a4f5dbee16e7af48b78ed7973f0dc0767fc4e50/flashNews.php" class='admin-flash-edit_form' method='post' enctype="multipart/form-data">
                     
                     <?php
                         if($statusChange!='newAdd'){

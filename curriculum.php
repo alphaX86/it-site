@@ -18,34 +18,39 @@
                     <i class="fas fa-laptop-code"></i>
                     <name>M.Tech</name>
                 </div>
+                <div class="curriculum-opt-list" onclick="dispCurrCol('MSc')">
+                    <i class="fas fa-award"></i>
+                    <name>MSc</name>
+                </div>
                 <div class="curriculum-opt-list" onclick="dispCurrCol('PHD')">
                     <i class="fas fa-award"></i>
                     <name>PHD</name>
                 </div>
+                
             </div>
             <div class="curriculum-display" id="currDisp" >
                 <iframe  id="currDispPDF" style="width: 100%;height: 100%;border: none;"></iframe>
             </div>
             <div class="curriculum-opt-sub" id="B.Tech">
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2019.pdf')">R-2019</div>
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2018.pdf')">R-2018</div>
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2015.pdf')">R-2015</div>
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2012.pdf')">R-2012</div>
             </div>
             <div class="curriculum-opt-sub" id="M.Tech">
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('mtech2015pt.pdf')">R-2015(P.T)</div>
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('mtech2013ft.pdf')">R-2013(F.T)</div>
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('mtech2013pt.pdf')">R-2013(P.T)</div>
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('mtech2009ft.pdf')">R-2009(F.T)</div>
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('mtech2009pt.pdf')">R-2009(P.T)</div>
+            </div>
+            <div class="curriculum-opt-sub" id="MSc">
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('msc2015.pdf')">R-2015</div>
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('msc2010.pdf')">R-2010</div>
             </div>
             <div class="curriculum-opt-sub" id="PHD">
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
-                <div class="curriculum-opt-sub-list" onclick="dispCurr('btech2008.pdf')">R-2008</div>
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('phd2015.pdf')">R-2015</div>
+                <div class="curriculum-opt-sub-list" onclick="dispCurr('phd2010.pdf')">R-2010</div>
             </div>
             
         </div>
@@ -54,27 +59,7 @@
 
     </div>
     </body>
-    <script>
-        var state=true;
-        var current="";
-        function dispCurr(doc){
-            if(state){
-
-            }
-            document.getElementById("currDispPDF").style.visibility='visible';  
-            document.getElementById("currDispPDF").src="./PDF/curriculum/"+doc;
-            document.getElementById("currDispPDF").scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-        function dispCurrCol(id){           
-            if(current!=""){
-                document.getElementById(current).style.visibility='hidden';
-                document.getElementById("currDispPDF").style.visibility='hidden';            
-            }
-            document.getElementById(id).style.visibility='visible';
-            document.getElementById(id).style.height='40vh';
-            current=id;
-        }
-    </script>
+    <script src="./Js/curriculum.js" type="text/javascript"></script>
 
 </html>
 

@@ -6,13 +6,13 @@
 @import 'facultyDetails';
 @import 'curriculum';
 @import'students';
+@import 'infrastructure';
 @import 'footer';
-@import'../Admin/Sass/admin';
+@import'../fdd146b2c100a0c7e37994291a4f5dbee16e7af48b78ed7973f0dc0767fc4e50/Sass/admin';
 html {
     font-size: 18px;
     font-weight: 500;
-    padding: 0px;
-    margin: 0px;
+    overflow-y: auto;
 }
 
 .site {
@@ -21,9 +21,9 @@ html {
     grid-template-rows: 20% max-content 20%;
     justify-content: center;
     align-items: center;
-    width: 99.4%;
+    width: 98.5vw;
     height: 100%;
-    padding: 0 2px;
+    background-color: #f7efe6;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0;
-    //overflow-x: hidden;
+    bottom: 0;
 }
 
 a {
@@ -41,4 +41,11 @@ a {
 li,
 ul {
     list-style-type: none;
+}
+
+.Bg {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    background-color: #b7d2f1;
+    transform: scale(1vh, 1vw);
 }

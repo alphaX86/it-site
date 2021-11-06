@@ -1,0 +1,222 @@
+{
+    "Ids": ["PL-1", "PL-2", "HL", "PL", "PGL", "DAL", "SNL", "MRL"],
+    "PL-1": {
+        "name": "Programming Laboratory-I",
+        "noOfStudents": 80,
+        "img": "",
+        "workingHrs": {
+            "even": 32,
+            "odd": 32
+        },
+        "equipment": [
+            "20 Acer power Series Computers with Intel Core2 Duo Processor, 4GB DDR2 Memory,320GB Internal Hard Disk.",
+            "26 Acer Veriton Computers with Intel Core2 Duo Processor,4 GB DDR2 Memory,640GB Internal Hard Disk.",
+            "28 Dell Optiplex 9010 Computers with Intel Core i5 Processor, 8 GB DDR3 Memory, 500GB Internal Hard Disk.",
+            "4 Acer Veriton Computers with Intel Core i5 Processor, 4 GB DDR3 Memory, 500GB Internal Hard Disk",
+            "Switch 5 Nos",
+            "Oracle12C Database Server",
+            "Qualnet Server",
+            "Amplifier with Speakers",
+            "Sony &Hitachi Projector 2 Nos",
+            "Sony LCD TV"
+
+        ],
+        "courses": {
+            "even": [
+                "IT7211 Information Technology Essentials and Data Structures Laboratory",
+                "IT7412 Web Technology Laboratory",
+                "IT7411 Operating Systems Laboratory"
+            ],
+            "odd": [
+                "IT7312 Object Oriented Programming and Advanced Data Structure Laboratory",
+                "IT7511 Computer Networks Laboratory"
+            ]
+        }
+
+    },
+    "PL-2": {
+        "name": "Programming Laboratory-II",
+        "noOfStudents": 70,
+        "img": "",
+        "workingHrs": {
+            "even": 32,
+            "odd": 32
+        },
+        "equipment": [
+            "30 Acer Computers with Intel Core i7 Processor, 8 GB DDR3 Memory 1TB Internal Hard Disk",
+            "14 Dell Computers with Intel Core i7 Processor, 8 GB DDR3 Memory Card, 1TB Internal Hard Disk.",
+            "12HP Computers with Intel Core i7 Processor, 16 GB DDR4 Memory Card, 1TB Internal Hard Disk.",
+            "10 HP Computers with Intel Core i7 Processor, 8 GB DDR4 Memory Card, 1TB Internal Hard Disk.",
+            "Switch 4 Nos",
+            "Oracle12C Database Server",
+            "Qualnet Server",
+            "Amplifier with Speakers",
+            "Sony &Hitachi Projector 2 Nos",
+            "Sony LCD TV"
+
+        ],
+        "courses": {
+            "even": [
+                "IT7612 Information Security and Mobile Computing Laboratory",
+                "IT7613 Integrated Programming Laboratory"
+            ],
+            "odd": [
+                "IT7711 Graphics and Multimedia Laboratory"
+            ]
+        }
+
+    },
+    "HL": {
+        "name": "Hardware Laboratory",
+        "noOfStudents": 30,
+        "img": "",
+        "workingHrs": {
+            "even": 8,
+            "odd": 8
+        },
+        "equipment": [
+            "10 HP Computers with Intel Core i7 Processor, 8 GB DDR3 Memory Card, 1TB Internal Hard Disk.",
+            "8051 Micro Controller Kit with Interface (Stepper Motor, LCD, DAC, ADC, Keyboard, TrafficController, 7 Segment Display)",
+            "12HP Computers with Intel Core i7 Processor, 16 GB DDR4 Memory Card, 1TB Internal Hard Disk",
+            "Digital IC Trainer kit, IC Tester",
+            "CUDA Kit",
+            "Intel Galileo Board",
+            "ARM Controller Kits CRO, 12V Power supply, Function generator, Voltmeter, Ammeter, VLSI/FBGA Trainer kit, CPLD kit, Inforce Computing with GPRS GPS",
+            "Arduino Uno Atmega328-clone, Arduino mega kit, Raspberry pi starter kit,Gsm module, Gps interface, Bluetooth interface"
+
+        ],
+        "courses": {
+            "even": [
+                "EE5261 (R-2019) Electrical and Electronics Engineering Laboratory"
+            ],
+            "odd": [
+                "IT7311 Digital and Database Systems Laboratory",
+                "IT7512 Embedded Systems Laboratory"
+            ]
+        }
+
+    },
+    "PL": {
+        "name": "Project Laboratory",
+        "noOfStudents": 70,
+        "img": "",
+        "workingHrs": {
+            "even": 20,
+            "odd": 20
+        },
+        "equipment": [
+            "70 Desktop systems with Intel Core i7 Processor, 16 GB DDR4 Memory Card, 2TB Internal Hard Disk. 2GB NVidia Graphics card.",
+            "Switch 3 Nos"
+        ],
+        "courses": {
+            "even": [
+                "IT7811 Project Work"
+            ],
+            "odd": [
+                "IT7712 Mini Project"
+            ]
+        }
+
+    },
+    "PGL": {
+        "name": "PG Laboratory",
+        "noOfStudents": 18,
+        "img": "",
+        "workingHrs": {
+            "even": 40,
+            "odd": 28
+        },
+        "equipment": [
+            "715 Acer Veriton systems with Intel Core i5 Processor, 8 GB DDR3 Memory Card, 500GB Internal Hard Disk",
+            "Switch 3 Nos",
+            "LG LED TV",
+            "Data Server"
+        ],
+        "courses": {
+            "even": [
+                "IF 7111 Data Structures Laboratory",
+                "IF 7211 Distributed Systems Laboratory",
+                "IF5261 (R-2019) Data Engineering Laboratory",
+                "IF 7311 Technical Seminar and Report Writing",
+                "IF 7312 Project Work Phase I",
+                "IF 7411 Project Work Phase II"
+            ],
+            "odd": [
+                "IF 7111 Data Structures Laboratory",
+                "IF 7211 Distributed Systems Laboratory",
+                "IF5261 (R-2019) Data Engineering Laboratory",
+                "IF 7311 Technical Seminar and Report Writing",
+                "IF 7312 Project Work Phase I",
+                "IF 7411 Project Work Phase II"
+            ]
+        }
+
+    },
+    "DAL": {
+        "name": "Data Analytics Laboratory",
+        "noOfStudents": 70,
+        "img": "",
+        "workingHrs": {
+            "even": 4,
+            "odd": 2
+        },
+        "equipment": [
+            "70 Desktop systems with Intel Core i7 Processor, 8 GB DDR4 Memory Card, 2TB Internal Hard Disk",
+            "Switch 3 Nos"
+        ],
+        "courses": {
+            "even": [
+                "IT7611 Creative and Innovative Project"
+            ],
+            "odd": [
+                "IT7513 Socially Relevant Project"
+            ]
+        }
+
+    },
+    "SNL": {
+        "name": "Sensor Network Laboratory",
+        "noOfStudents": 12,
+        "img": "",
+        "workingHrs": {
+            "even": 52,
+            "odd": 52
+        },
+        "equipment": [
+            "11 Acer Veriton systems with Intel Core i5 Processor, 8 GB DDR3 Memory Card, 500GB Internal Hard Disk",
+            "14 Acer Veriton AMD Processor, 8 GB DDR3 Memory Card, 500GB Internal Hard Disk.",
+            "Hitachi Projector 1 Nos",
+            "Cloud Serve"
+        ],
+        "courses": {
+            "even": [
+                "Project Works"
+            ],
+            "odd": [
+                "Project Works"
+            ]
+        }
+
+    },
+    "MRL": {
+        "name": "Media Research Laboratory",
+        "noOfStudents": 3,
+        "img": "",
+        "workingHrs": {
+            "even": 52,
+            "odd": 52
+        },
+        "equipment": [
+            "Fujitsu Work Station, Dell i7 Processor, 8 GB RAM, 1 TB Hard disk, Acer 4GB RAM, 500GB Hard disk"
+        ],
+        "courses": {
+            "even": [
+                "Project works"
+            ],
+            "odd": [
+                "Project works"
+            ]
+        }
+
+    }
+}

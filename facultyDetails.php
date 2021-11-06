@@ -12,6 +12,7 @@
         $fID=$_COOKIE["fID"];
         $fPhone=$_COOKIE["fPhone"];
         $fEmail=$_COOKIE['fEmail'];
+        
         $sql='SELECT * FROM `facultyDetails` WHERE `fID` = '.$fID.' AND `type` = '.$fType;
         $result = $conn->query($sql);
         $row=$result->fetch_assoc();
@@ -107,18 +108,7 @@
 
     </div>
     </body>
-    <script>
-        var current="";
-        function dispCol(id){
-
-            if(current!="")
-                document.getElementById(current).style.visibility='hidden';            
-            document.getElementById(id).style.visibility='visible';
-            document.getElementById(id).style.height='70vh';
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'center' });
-            current=id;
-        }
-    </script>
+    <script src="./Js/facultyDetails.js" type="text/javascript"></script>
 
 
 </html>
