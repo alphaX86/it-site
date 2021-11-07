@@ -30,3 +30,11 @@ $adminColors:("edit":#bf1d0c, "add":#6fe222, "select":#6fe222);
         #{$vendor}#{$name}:#{$value};
     }
 }
+
+@mixin buttonHover() {
+    box-shadow: 0.2vw 0.3vw #777879;
+    transition: 0.5s;
+    background-color: #003f9d;
+    color: white;
+    border: none;
+}

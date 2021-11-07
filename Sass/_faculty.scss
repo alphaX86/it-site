@@ -23,10 +23,9 @@
             justify-content: space-around;
         }
         &s:hover {
-            box-shadow: 0.2vw 0.4vh #b3b3b3;
             cursor: pointer;
             transform: translateY(-2%);
-            transition: 0.2s;
+            @include buttonHover();
         }
     }
     &-list {
