@@ -4,6 +4,8 @@
     display: grid;
     grid-template-rows: 17vh auto;
     padding-bottom: 0.8%;
+    //border: 0.1vh solid black;
+    //align-items: flex-end;
     //background-image: linear-gradient(to bottom, #000667, #020391, #013289); //#114971, #18669e); // background-image: linear-gradient(40deg, #01009d, #0021ff, #6276ff);
 }
 
@@ -13,7 +15,7 @@
     grid-template-columns: 12% auto 15%;
     grid-template-rows: 100%;
     margin-top: 2vh;
-    // border: 0.1vh solid black;
+    //border: 0.1vh solid black;
     &-logoA {
         height: 100%;
         width: 100%;
@@ -28,8 +30,8 @@
     &-title {
         color: #1181b2;
         display: grid;
-        grid-template-rows: 4vh 4vh auto;
-        color: black; //#deb992;
+        grid-template-rows: 5vh 4vh auto;
+        color: black; //#deb992;    
         H1 {
             font-size: min(4vh, 2.5vw);
             display: flex;
@@ -47,8 +49,8 @@
     flex: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, max-content);
-    background-color: #003f9d;
-    margin-top: 2vh;
+    background-color: theme("light");
+    margin-top: 1vh;
     padding: 0.3vw 0.6vh;
     &_item {
         grid-row: 1;
@@ -74,6 +76,7 @@
         margin: auto 0.3vw;
         white-space: nowrap;
         color: white;
+        font-weight: 500;
     }
     &_item:hover {
         cursor: pointer;
@@ -82,6 +85,7 @@
             width: 5vw;
             position: absolute;
             border: 0.2vh solid white;
+            background-color: white;
             transform: translate(0.3vw, 2.2vh);
             @include vendorPrefix('animation', 'growBar 0.4s 1 ease-in-out');
         }

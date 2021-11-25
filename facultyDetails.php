@@ -36,13 +36,13 @@
             </div>
             <div class="facultyContent">
                 <div class="facultyContent-Item">
-                   <?php echo '<i>'.$fName.'</i>';?>
+                   <?php echo '<Name>'.$fName.'</Name>';?>
                 </div>
                 <div class="facultyContent-Item">
-                   <?php echo '<i>'.$fDesig.'</i>';?>
+                   <?php echo '<Design>'.$fDesig.'</Design>';?>
                 </div>
                 <div class="facultyContent-Item">
-                    <?php echo '<i>'.$fAreaOfSpec.'</i>';?>
+                    <?php echo '<content>'.$fAreaOfSpec.'</content>';?>
                 </div>
                 <div class="facultyContent-Item_links">
                    <?php
