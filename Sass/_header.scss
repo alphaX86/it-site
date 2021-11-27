@@ -1,4 +1,5 @@
 .head {
+<<<<<<< HEAD
     width: 99%;
     height: 25%;
     justify-content: space-between;
@@ -9,73 +10,106 @@
     grid-column: 1/-1;
     grid-row: 1;
     overflow-anchor: center;
+=======
+    grid-column: 1/-1;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 17vh auto;
+    padding-bottom: 0.8%;
+    //border: 0.1vh solid black;
+    //align-items: flex-end;
+    //background-image: linear-gradient(to bottom, #000667, #020391, #013289); //#114971, #18669e); // background-image: linear-gradient(40deg, #01009d, #0021ff, #6276ff);
+>>>>>>> origin/shankuroko-patch-1
 }
 
 .header {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    justify-self: center;
-    width: 99%;
-    border-radius: 10px;
-    background-color: theme(primary);
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 12% auto 15%;
+    grid-template-rows: 100%;
+    margin-top: 2vh;
+    //border: 0.1vh solid black;
     &-logoA {
-        height: 95%;
-        width: 12%;
-        margin: auto 10px;
+        height: 100%;
+        width: 100%;
+        //border: 0.1vh solid black; //margin: auto 10px;
     }
     &-logoM {
-        height: 95%;
-        width: 15%;
-        margin: auto 10px;
+        height: 100%;
+        width: 100%;
+        //margin: auto 10px;
+        // border: 0.1vh solid black;
     }
     &-title {
-        color: theme(text-primary);
+        color: #1181b2;
+        display: grid;
+        grid-template-rows: 5vh 4vh auto;
+        color: black; //#deb992;    
+        H1 {
+            font-size: min(4vh, 2.5vw);
+            display: flex;
+            justify-content: center;
+        }
+        H2 {
+            font-size: 3vh;
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
 .menu-nav {
-    flex: 0.2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    width: 99%;
-    border: 2px solid black;
-    border-radius: 15px;
-    background-color: theme(primary);
+    flex: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, max-content);
+    background-color: theme("light");
+    margin-top: 1vh;
+    padding: 0.3vw 0.6vh;
     &_item {
-        flex: 0;
+        grid-row: 1;
         display: flex;
         justify-content: center;
-        height: 98%;
-        width: 20%;
-        max-width: 120px;
-        max-height: 20px;
-        min-height: 17px;
-        margin: 5px 2px;
-        padding: 5px;
-        border-radius: 10px;
-    }
-    &_item:hover {
-        background-color: menuColor(hover);
+        align-items: center;
+        height: 4vh;
+        padding: 2% 5%;
+        border-radius: 1vh;
+        color: white;
     }
     &:nth-child(1) {
         padding-left: 1px;
     }
     &_logo {
-        margin-top: 5px;
-        margin-left: 5px;
-        align-self: center;
-        color: menuColor(text);
+        margin-top: 0.7vh;
+        font-size: 1.5vw;
         transform: translateY(-10%);
     }
     &_link {
-        flex: 2;
-        font-size: 10px;
-        color: menuColor(text);
+        font-size: min(1.68vh, 1vw);
         text-justify: center;
-        margin: auto 2px;
+        margin: auto 0.3vw;
         white-space: nowrap;
+        color: white;
+        font-weight: 500;
+    }
+    &_item:hover {
+        cursor: pointer;
+        &::after {
+            content: "";
+            width: 5vw;
+            position: absolute;
+            border: 0.2vh solid white;
+            background-color: white;
+            transform: translate(0.3vw, 2.2vh);
+            @include vendorPrefix('animation', 'growBar 0.4s 1 ease-in-out');
+        }
+    }
+}
+
+@keyframes growBar {
+    0% {
+        transform: translate(0.3vw, 2.2vh) scaleX(0%);
+    }
+    100% {
+        transform: translate(0.3vw, 2.2vh) scaleX(100%);
     }
 }

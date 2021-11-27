@@ -1,7 +1,12 @@
-$themeColors: ( "primary":red, "light":blue, "text-primary":white);
+$themeColors: ( "primary":#003f9d, "light":#1461d5, "text-primary":white, "text-H1":#242323, "text-H2":#3b3b3c, "facBG":#e6d9b2, "box-shadow":#777879, "BG":#e9e8e8);
 $menuColors:("bg":blue, "text":white, "hover":grey);
+$adminColors:("edit":#bf1d0c, "add":#6fe222, "select":#6fe222);
 @function theme($color) {
     @return map-get($themeColors, $color);
+}
+
+@function admin($color) {
+    @return map-get($adminColors, $color);
 }
 
 @function menuColor($color) {
@@ -18,4 +23,24 @@ $menuColors:("bg":blue, "text":white, "hover":grey);
     @media screen and (min-width: 900px) {
         @content
     }
+}
+
+@mixin vendorPrefix($name, $value) {
+    @each $vendor in ('', '-webkit-', '-moz-', '-ms-', '-o-') {
+        #{$vendor}#{$name}:#{$value};
+    }
+}
+
+@mixin vendorValuePrefix($name, $value) {
+    @each $vendor in ('', '-webkit-', '-moz-', '-ms-', '-o-') {
+        #{$name}:#{$vendor}#{$value};
+    }
+}
+
+@mixin buttonHover() {
+    box-shadow: 0.2vw 0.3vw #777879;
+    transition: 0.5s;
+    background-color: theme("primary");
+    color: white;
+    border: none;
 }

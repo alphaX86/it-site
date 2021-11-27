@@ -1,4 +1,5 @@
 .footer {
+<<<<<<< HEAD
     display: flex;
     bottom: 0px;
     left: 0px;
@@ -48,4 +49,12 @@
     right: 0px;
     height: 25%;
     width: 98%;
+=======
+    grid-column: 1/-1;
+    grid-row: -1;
+    height: 20vh;
+    border: 1px solid black;
+    color: black;
+    background-color: black;
+>>>>>>> origin/shankuroko-patch-1
 }

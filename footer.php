@@ -1,4 +1,5 @@
 <div class="footer">
+<<<<<<< HEAD
     <div class="column_1">
         <h3>Contact Details</h3>
         <a href="tel:04422516020">Telephone: 044-2251 6020</a> <br>
@@ -25,4 +26,7 @@
 
 <div class="copyright-row">
     © 2021 Department of Information Technology
+=======
+    Sample
+>>>>>>> origin/shankuroko-patch-1
 </div>
