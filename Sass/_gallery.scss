@@ -1,12 +1,19 @@
+.gallery{
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
 .grid-space {
-	padding-left:10%;
-    padding-right:10%;
+	padding-left:5%;
+    padding-right:5%;
+    width: 90%;
+    //border:1px solid black;
 }
 
 .grid-bg {
-	background-color: rgba(255, 255, 100, 0.7);
-    padding-left:5%;
-    padding-right:5%;
+	//background-color: rgba(255, 255, 100, 0.7);    
+    padding: 0 3%;
+    //border:1px solid black;
 }
 
 .grid-container {
@@ -16,7 +23,7 @@
 }
 
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    //background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid black;
     text-align: center;
     
@@ -27,5 +34,6 @@
       height: 100%;
     }
 }
+
 
 

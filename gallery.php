@@ -10,6 +10,8 @@
 
             <?php include 'header.php'?>
 
+            <div class="gallery"> 
+
             <h1>OUR GALLERY</h1>
 
             <div class="grid-space">
@@ -67,7 +69,7 @@
             
             <br>
 
-            
+            </div>
             <?php include 'footer.php'?>
         </div>
     </body>

@@ -28,8 +28,12 @@
         </script>
     </head>
     <body>
-               
+             
+        <div class="site">
+
             <?php include 'header.php'?>
+            
+            <div class='placement'>
 
             <h1>PLACEMENT STASTICS</h1>
 
@@ -40,14 +44,7 @@
                     <!-- PIE CHART FINAL - DON'T TOUCH THIS -->
                     <h2>2021 - 2022 PLACEMENT STASTICS</h2> 
                     <div class="grid-container-pie">
-                        <div>
-                            <figure class="pie-chart">
-                            <figcaption>
-		                        Placed 25<span style="color:#4e79a7"></span><br>
-		                        Not Placed 75<span style="color:#f28e2c"></span><br>
-                            </figcaption>
-	                        </figure>
-                        </div>
+                        
                         <div class="companies">
                             <h3>COMPANIES</h3>
                             <table>
@@ -97,6 +94,14 @@
                                 </tr>
                             </table> 
                         </div>
+                        <div>
+                            <figure class="pie-chart">
+                            <figcaption>
+		                        Placed 25<span style="color:white"></span><br>
+		                        Not Placed 75<span style="color:#1461d5"></span><br>
+                            </figcaption>
+	                        </figure>
+                        </div>
                     </div>
                     <br><br>                             
                     
@@ -116,32 +121,32 @@
                                 label: '# placed',
                                 data: [79, 75, 85, 77, 87, 87, 95, 95, 88, 103, 88, 65],
                                 backgroundColor: [
-                                    'rgba(255, 99, 132, 0.7)',
-                                    'rgba(54, 162, 235, 0.7)',
-                                    'rgba(255, 206, 86, 0.7)',
-                                    'rgba(75, 192, 192, 0.7)',
-                                    'rgba(153, 102, 255, 0.7)',
-                                    'rgba(255, 159, 64, 0.7)',
-                                    'rgba(255, 99, 132, 0.7)',
-                                    'rgba(54, 162, 235, 0.7)',
-                                    'rgba(255, 206, 86, 0.7)',
-                                    'rgba(75, 192, 192, 0.7)',
-                                    'rgba(153, 102, 255, 0.7)',
-                                    'rgba(255, 159, 64, 0.7)'
+                                    'rgba(20, 97, 213, 0.7)',
+                                    'rgba(20, 97, 213, 0.7)',
+                                    'rgba(20, 97, 213, 0.7)',
+                                    'rgba(20, 97, 213, 0.7)',
+                                    'rgba(20, 97, 213, 0.7)',
+                                    'rgba(20, 97, 213, 0.7)',
+                                    'rgba(20, 97, 213, 0.7)',
+                                    'rgba(20, 97, 213, 0.7)',
+                                    'rgba(20, 97, 213, 0.7)',
+                                    'rgba(20, 97, 213, 0.7)',
+                                    'rgba(20, 97, 213, 0.7)',
+                                    'rgba(20, 97, 213, 0.7)'
                                 ],
                                 borderColor: [
-                                    'rgba(255, 99, 132, 1)',
-                                    'rgba(54, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(75, 192, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 64, 1)',
-                                    'rgba(255, 99, 132, 1)',
-                                    'rgba(54, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(75, 192, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 64, 1)'
+                                    'rgba(20, 97, 213, 1)',
+                                    'rgba(20, 97, 213, 1)',
+                                    'rgba(20, 97, 213, 1)',
+                                    'rgba(20, 97, 213, 1)',
+                                    'rgba(20, 97, 213, 1)',
+                                    'rgba(20, 97, 213, 1)',
+                                    'rgba(20, 97, 213, 1)',
+                                    'rgba(20, 97, 213, 1)',
+                                    'rgba(20, 97, 213, 1)',
+                                    'rgba(20, 97, 213, 1)',
+                                    'rgba(20, 97, 213, 1)',
+                                    'rgba(20, 97, 213, 1)'
                                 ],
                                 borderWidth: 1
                             }]
@@ -155,7 +160,7 @@
                         }
                     });
                     </script>
-                    <p style="text-align:center; color: grey;">Academic Year (Number of Students Registered)</p>
+                    <p style="text-align:center; color: #242323; font-size: 1.2vw">Academic Year (Number of Students Registered)</p>
                     <br><br>
                     
                     <h2>STUDENTS OPTED FOR HIGHER STUDIES</h2>  
@@ -229,7 +234,6 @@
                         </div>
 
                         <div class="highers-list" id="y1819" >
-                        <h3>2018 - 2019</h3>
                         <table class="table-striped" style="background-color: rgba(255, 255, 255, 0.6)">
                             <thead>
                                 <tr><th>S.No</th>
@@ -257,7 +261,6 @@
                         </div>
 
                         <div class="highers-list" id="y1718" >
-                        <h3>2017 - 2018</h3>
                         <table class="table-striped" style="background-color: rgba(255, 255, 255, 0.6)">
                             <thead>
                                 <tr><th>S.No</th>
@@ -303,7 +306,6 @@
                         </div>
 
                         <div class="highers-list" id="y1617" >
-                        <h3>2016 - 2017</h3>
                         <table class="table-striped" style="background-color: rgba(255, 255, 255, 0.6)">
                             <thead>
                                 <tr><th>S.No</th>
@@ -337,7 +339,6 @@
                         </div>
 
                         <div class="highers-list" id="y1516" >
-                        <h3>2015 - 2016</h3>
                         <table class="table-striped" style="background-color: rgba(255, 255, 255, 0.6)">
                             <thead>
                                 <tr><th>S.No</th>
@@ -383,7 +384,6 @@
                         </div>
 
                         <div class="highers-list" id="y1415" >
-                        <h3>2014 - 2015</h3>
                         <table class="table-striped" style="background-color: rgba(255, 255, 255, 0.6)">
                             <thead>
                                 <tr><th>S.No</th>
@@ -409,7 +409,7 @@
                                 <tr><td>3</td>
                                     <td>2015</td>
                                     <td>Abishek G</td>
-                                    <td>MS Ã¢Â€Â“Information Security</td>
+                                    <td>MS - Information Security</td>
                                     <td>Carnegie Mellon University</td>
                                 </tr>
                                 <tr><td>4</td>
@@ -470,8 +470,9 @@
             </div>
 
         <br>
-
+        </div>        
         <?php include 'footer.php'?>
+    </div>
     </body>
 
 </html>

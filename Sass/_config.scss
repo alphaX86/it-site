@@ -1,4 +1,4 @@
-$themeColors: ( "primary":red, "light":blue, "text-primary":white);
+$themeColors: ( "primary":#003f9d,  "light":#1461d5,  "text-primary":white,  "text-H1":#242323,  "text-H2":#3b3b3c,  "facBG":#e6d9b2,  "box-shadow":#777879,  "BG":#e9e8e8);
 $menuColors:("bg":blue, "text":white, "hover":grey);
 @function theme($color) {
     @return map-get($themeColors, $color);
