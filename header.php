@@ -19,13 +19,8 @@
             <a href="hodDesk.php" class="menu-nav_link">HOD Desk</a>
         </li>
         <li class="menu-nav_item">
-<<<<<<< HEAD
-            <i class="fas fa-address-card fa-1x menu-nav_logo"></i>
-            <a href="vision_mission.php" class="menu-nav_link">VISION & MISSION</a>
-=======
             <i class="fas fa-glasses menu-nav_logo"></i>
             <a href="vision_mission.php" class="menu-nav_link">VISSION & MISSION</a>
->>>>>>> origin/shankuroko-patch-1
         </li>
         <li class="menu-nav_item">
             <i class="far fa-images menu-nav_logo"></i>
