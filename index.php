@@ -2,10 +2,12 @@
 <html lang='en'>
     <head>
         <script src="https://kit.fontawesome.com/d294cf5192.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.min.css" />
+        <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
         <link rel="stylesheet" href='./CSS/main.css'>
     </head>
     <header>
-        <?php include 'dbConnect.php'?>
+        <!--<?php include 'dbConnect.php'?>-->
         <?php 
         $toRemove=[];
         $test=strtotime('2021-11-07 00:00:00');

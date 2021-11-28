@@ -4,6 +4,8 @@
         <script src="https://kit.fontawesome.com/d294cf5192.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href='./CSS/main.css'>
         <script src="./Js/main.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.min.css" />
+        <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
     <?php 
         include 'dbConnect.php';
         $tableFName="`factulty`";
