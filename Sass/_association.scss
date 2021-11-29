@@ -1,1 +1,61 @@
+.assoc{
+    grid-row: 2;
+    grid-column: 1/-1;
+    //border: 1px solid  black;
+}
+
+.gen-info-assoc {
+    display: grid;
+    grid-template-columns: 110vh auto;    
+    grid-gap: 1.5%;  
+    //border: 1px solid black;
+    //height: 20%;
+}
+
+.gen-info-content{
+    background-color: white;
+	color:theme("primary");
+	border: 0.1vw solid theme("primary");
+    border-radius: 1vh;
+    text-align: justify;
+    align-content: center;
+    padding-top: 0.2vh;
+    padding: 0.9vw;
+    font-size: 1.2vw    
+}
+
+.gen-info-pic{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    img {
+        width: 50%;
+        //max-width: 70%;
+        height: 50%;
+        //max-height: 70%;
+        //margin: auto 10px;
+      }
+}
+
+.office-bearers-assoc{
+    background-color: white;
+    width: 110vh;
+
+    table{
+        text-align: left;
+    }
+}
+
+.assoc-act-eve{
+    display: grid;
+    grid-template-columns: 90vh 90vh;    
+    grid-gap: 1.5%; 
+    //border: 1px solid black;
+
+    h2{
+        text-align: center;
+    }
+    
+}
+
 

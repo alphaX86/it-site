@@ -5,6 +5,7 @@
 @import 'hodDesk';
 @import 'gallery';
 @import 'placements';
+@import 'association';
 @import'../Admin/Sass/admin';
 html {
     font-size: 18px;
@@ -61,7 +62,7 @@ table {
     //border: 1px solid black;    
   }
 
-td{
+td, th{
     padding-left: 1.2vw;
     padding-right: 1.2vw;
     padding-top: 1.6vh;
