@@ -9,7 +9,7 @@
         <a href="./faculty.php" class="admin-nav_link">FACULTY</a>
     </li>
     <li class="admin-nav_item">
-        <a href="./curriculum.php" class="admin-nav_link">CURRRICULUM</a>
+        <a href="./curriculum.php" class="admin-nav_link">CURRICULUM</a>
     </li>
     <li class="admin-nav_item">
         <a href="./research.php" class="admin-nav_link">RESEARCH</a>

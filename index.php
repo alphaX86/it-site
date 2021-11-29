@@ -7,7 +7,7 @@
         <link rel="stylesheet" href='./CSS/main.css'>
     </head>
     <header>
-        <!--<?php include 'dbConnect.php'?>-->
+        <?php include 'dbConnect.php'?>
         <?php 
         $toRemove=[];
         $test=strtotime('2021-11-07 00:00:00');
@@ -32,7 +32,7 @@
                         </li>
                         <li>
                             <i class="fas fa-users"></i>
-                            <content>IT Assoication</content>
+                            <content>IT Association</content>
                         </li>
                         <li>
                             <i class="fas fa-hotel"></i>
@@ -91,9 +91,8 @@
                     <p>“Imagination is more important than knowledge “ - Innovative ideas from student side are encouraged and support for implementation of the same offered by faculty members.</p>
                     
                 </div>
-                
             </div>
-           <?php include 'footer.php'?>
+           <!-- <?php include 'footer.php'?> -->
         </div>
     </body>
 

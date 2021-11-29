@@ -20,7 +20,7 @@
         </li>
         <li class="menu-nav_item">
             <i class="fas fa-glasses menu-nav_logo"></i>
-            <a href="vision_mission.php" class="menu-nav_link">VISSION & MISSION</a>
+            <a href="vision_mission.php" class="menu-nav_link">VISION & MISSION</a>
         </li>
         <li class="menu-nav_item">
             <i class="far fa-images menu-nav_logo"></i>
@@ -32,7 +32,7 @@
         </li>
         <li class="menu-nav_item">
             <i class="fas fa-atlas menu-nav_logo"></i>
-            <a href="curriculum.php" class="menu-nav_link">CURRRICULUM</a>
+            <a href="curriculum.php" class="menu-nav_link">CURRICULUM</a>
         </li>
         <li class="menu-nav_item">
             <i class="fas fa-atom menu-nav_logo"></i>
