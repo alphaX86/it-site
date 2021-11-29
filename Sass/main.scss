@@ -7,26 +7,24 @@
 @import 'curriculum';
 @import'students';
 @import 'infrastructure';
+@import 'gallery';
 @import 'footer';
 @import'../fdd146b2c100a0c7e37994291a4f5dbee16e7af48b78ed7973f0dc0767fc4e50/Sass/admin';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 html {
-    font-size: 18px;
-    font-weight: 500;
-    overflow-y: auto;
+    // overflow-y: scroll;
     margin: 0px;
     padding: 0;
     background-color: #e9e8e8;
 }
 
 .site {
-    @include vendorPrefix('display',
-    'grid');
+    display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 24vh max-content 20%;
     justify-content: center;
     width: 98.5vw;
-    height: 100%;
+    height: max-content;
 }
 
 body {

@@ -39,12 +39,14 @@
             width: 100%;
             padding: 2%;
             font-weight: 700;
+            font-size: 3vh;
         }
         Design {
             width: 100%;
             padding: 2%;
             color: theme('text-H1');
             font-weight: 600;
+            font-size: 2vh;
         }
         content {
             width: 100%;
@@ -81,7 +83,7 @@
     grid-template-rows: repeat(auto-fill, min(4vw, 6vh));
     grid-row-gap: 1.5%; // align-items: center;
     padding: 2% 1%;
-    background-color: theme('facBG');
+    //background-color: theme('');
     &-item {
         //border: 0.1vh solid black;
         border-radius: 1vh;
@@ -90,11 +92,12 @@
         align-items: center;
         justify-content: center;
         font-size: min(3vh, 2vw);
-        background-color: theme("BG");
-        color: theme('primary');
+        background-color: theme("light");
+        color: white;
     }
     &-item:hover {
         cursor: pointer;
+        transform: translateY(-2%);
         @include buttonHover();
     }
 }
@@ -109,11 +112,12 @@
     visibility: hidden;
     font-size: min(2vw, 3vh);
     &-list {
-        border: 0.1vh solid black;
+        border: 0.1vh solid theme('primary');
         border-radius: 1vh;
         overflow-y: scroll;
         padding: 2% 1%;
         color: theme('primary');
+        background-color: white;
         li {
             display: flex;
             align-items: center;

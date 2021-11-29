@@ -24,10 +24,7 @@
             <div class="aboutUs">
                 <div class="aboutUs-opts">
                     <div class="aboutUs-opts_list">
-                        <li>
-                            <i class="fas fa-photo-video"></i>
-                            <content>Virtual Tour</content>
-                        </li>
+                        
                         <li>
                             <i class="fas fa-users"></i>
                             <content>IT Assoication</content>
@@ -36,14 +33,18 @@
                             <i class="fas fa-hotel"></i>
                             <content>Annual Report</content>
                         </li>
+                        <li>
+                            <i class="fas fa-bullseye"></i>
+                            <content>Placements</content>
+                        </li>
                     </div>
                     <div class="aboutUs-opts_imgSlide">
                         <images>
                             <img src="./Images/MainPage/SL-1.jpeg"/>
-                            <img src="./Images/MainPage/SL-1.jpeg"/>
-                            <img src="./Images/MainPage/SL-1.jpeg"/>
-                            <img src="./Images/MainPage/SL-1.jpeg"/>
-                            <img src="./Images/MainPage/SL-1.jpeg"/>
+                            <img src="./Images/MainPage/SL-2.jpg"/>
+                            <img src="./Images/MainPage/SL-3.jpg"/>
+                            <img src="./Images/MainPage/SL-4.jpg"/>
+                            <img src="./Images/MainPage/SL-5.jpg"/>
                         </images>    
                     </div>
                     <?php

@@ -50,6 +50,7 @@
             <i class="fas fa-marker menu-nav_logo"></i>
             <a href="event.php" class="menu-nav_link">EVENTS</a>
         </li>
+        
     </div>
 </div>
 <script src="./Js/header.js" type="text/javascript" ></script>

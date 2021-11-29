@@ -12,10 +12,12 @@
         grid-row-gap: 3%;
         padding: 5% 0;
         &s {
-            border: 0.1vh solid black;
+            //border: 0.1vh solid black;
             border-radius: 1vh;
             display: flex;
             align-items: center;
+            background-color: theme('light');
+            color: white;
             font-size: min(1.2vw, 2vh);
             i {
                 font-size: min(2vw, 3vh);
@@ -39,7 +41,7 @@
         padding: 2%;
         overflow-y: scroll;
         visibility: hidden;
-        //background-color: theme("light");
+        //background-color: theme("primary");
         &Item {
             //border: 0.1vh solid black;
             border-radius: 5px;
@@ -47,11 +49,11 @@
             // width: 15vw;
             display: grid;
             //background-color: rgba(10, 10, 10, 0.877);
-            background-color: theme('facBG');
+            background-color: theme('light');
             grid-template-rows: min(15vw, 25vh) auto auto auto;
             grid-template-columns: 100%;
             font-size: min(1vw, 1.7vh);
-            color: theme("text-H1");
+            color: white;
             &_Name {
                 display: flex;
                 align-items: center;

@@ -9,7 +9,14 @@
         <?php include 'header.php'?>
         <div class="infrastructure">
             <div class="infrastructure-title">Infrastructure</div>
-            <div class="infrastructure-intro"></div>
+            <div class="infrastructure-intro">
+                <content>
+                    The computational needs of the researchers and engineers are met through well equipped laboratories. The resources in the department are continually updated with the changing industrial trends. The Advanced computing facility has been provided with the latest dual-core processors from Intel.
+                </content>
+                <content>
+                    The department has well equipped laboratories with facilities that are vital to train the students in state-of-art software and hardware. As a part of our expansion initiatives, a new computer lab of about 4500 sq.ft has been setup in the third floor of the IT department. A separate IT department block has also been proposed and is expected to start functioning in a couple of years.
+                </content>                        
+            </div>
             <div class="infrastructure-opt">
                 <div class="infrastructure-opt_list" onclick="dispCol('PL-1','110vh')">Programming Laboratory - I</div>
                 <div class="infrastructure-opt_list"onclick="dispCol('PL-2','110vh')">Programming Laboratory - II</div>
@@ -64,7 +71,7 @@
                         </div>
                         <script>
                             persent='.$content['workingHrs']['even'].'/52*100;
-                            document.getElementById("'.$id.'-pieEven").style= "background: conic-gradient( blue 0.00% "+persent+"%,red "+persent+"% 100% );"; 
+                            document.getElementById("'.$id.'-pieEven").style= "background: conic-gradient(#1461d5 0.00% "+persent+"%,white "+persent+"% 100% );border: 0.1vh solid #1461d5; "; 
                             
                         </script>
                         <div  id="'.$id.'-pieOdd" class="infrastructure-display-pie"  pie-title="Odd Semester">
@@ -74,7 +81,7 @@
                         </div>
                         <script>
                         persent='.$content['workingHrs']['odd'].'/52*100;
-                        document.getElementById("'.$id.'-pieOdd").style= "background: conic-gradient( blue 0.00% "+persent+"%,red "+persent+"% 100%);"; 
+                        document.getElementById("'.$id.'-pieOdd").style= "background: conic-gradient(#1461d5 0.00% "+persent+"%,white "+persent+"% 100%);"; 
                           
                         </script>
                     </div>                
@@ -122,6 +129,7 @@
     </body>
     <script src="./Js/facultyDetails.js" type="text/javascript"></script>
     <script src="./Js/infrastructure.js" type="text/javascript"></script>
+    
 
 </html>
 

@@ -7,6 +7,7 @@
     grid-row-gap: 2vh;
     &-opts {
         display: grid;
+        //border: 0.1vh solid black;
         grid-template-columns: 16vw 50vw auto;
         grid-column-gap: 1vw;
         padding: 2vh 0;
@@ -14,7 +15,7 @@
             //border: 0.1vh solid black;
             display: grid;
             grid-template-rows: repeat(auto-fill, max-content);
-            grid-row-gap: 2%;
+            grid-row-gap: 1%;
             padding: 5% 1% 5% 3%;
             li {
                 // border: 0.1vh solid theme("primary");
