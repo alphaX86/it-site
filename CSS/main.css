@@ -338,7 +338,7 @@
 }
 
 .pie-chart {
-  background: radial-gradient(circle closest-side, transparent 66%, #e9e8e8 0), conic-gradient(white 0, white 25%, #1461d5 0, #1461d5 75%);
+  background: radial-gradient(circle closest-side, transparent 66%, #e9e8e8 0), conic-gradient(white 0, white 31.4%, #1461d5 0, #1461d5 68.6%);
   position: relative;
   min-height: 45vh;
   margin: 0;
@@ -468,8 +468,7 @@
       align-content: center;
   padding-top: 0.2vh;
   padding: 0.9vw;
-  font-size: 1.2vw ul;
-  font-size-list-style-type: circle;
+  font-size: 1.2vw;
 }
 
 .gen-info-pic {

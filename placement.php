@@ -97,8 +97,8 @@
                         <div>
                             <figure class="pie-chart">
                             <figcaption>
-		                        Placed 25<span style="color:white"></span><br>
-		                        Not Placed 75<span style="color:#1461d5"></span><br>
+		                        Placed 79<span style="color:#1461d5"></span><br>
+		                        Not Placed 36<span style="color:white"></span><br>
                             </figcaption>
 	                        </figure>
                         </div>
