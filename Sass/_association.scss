@@ -58,4 +58,33 @@
     
 }
 
+.table-striped-assoc{
+	text-align: left;
+	padding: 1vw;
+	border: 0.1vw solid theme("primary");
+	thead { color: theme("text-H1"); font-size:1.7vw; }
+	tbody { 
+		color: theme("text-H1"); 
+		td { font-size: 1.2vw; }
+		tr { border-top:0.1vw solid theme("primary");
+		}
+	}	
+}
 
+.assoc-gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1.5vw;
+
+    div{
+        border: 0.1vw solid black;
+        text-align: center;
+        
+    
+        >img {
+          width: 100%;
+          max-width: 100%;
+          height: 100%;
+        }
+    }
+}

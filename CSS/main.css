@@ -507,6 +507,48 @@
   text-align: center;
 }
 
+.table-striped-assoc {
+  text-align: left;
+  padding: 1vw;
+  border: 0.1vw solid #003f9d;
+}
+
+.table-striped-assoc thead {
+  color: #242323;
+  font-size: 1.7vw;
+}
+
+.table-striped-assoc tbody {
+  color: #242323;
+}
+
+.table-striped-assoc tbody td {
+  font-size: 1.2vw;
+}
+
+.table-striped-assoc tbody tr {
+  border-top: 0.1vw solid #003f9d;
+}
+
+.assoc-gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 1.5vw;
+}
+
+.assoc-gallery div {
+  border: 0.1vw solid black;
+  text-align: center;
+}
+
+.assoc-gallery div > img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
 .admin-nav {
   display: -webkit-box;
   display: -ms-flexbox;
