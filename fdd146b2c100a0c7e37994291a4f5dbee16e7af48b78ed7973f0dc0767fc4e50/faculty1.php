@@ -30,52 +30,55 @@
                 <div class="admin-fac_staffList" id="staffList">
                     <item onclick="edit('')">
                         <p>Dr dananjay Kumar</p>
-                        <i class="fas fa-user-edit fa-2x"></i>
+                        <i class="fas fa-user-edit" onclick="finishUpdate()"></i>
                     </item>
-                    <item onclick="edit('')">
+                    <item onclick="editFaculty()">
                         <p>Dr Dananjay Kumar</p>
-                        <i class="fas fa-user-edit fa-2x"></i>
+                        <i class="fas fa-user-edit"></i>
                     </item>
-                    <item>
+                    <item onclick="addNewFaculty()">
                         <p><strong>ADD</strong></p>
                         <i class="fas fa-plus" ></i>
                     </item>
                 </div>
                 <div class="admin-fac_display">
+                    <heading>
                     <name>Dr dananjay kumar</name>
+                    <i class="fas fa-clipboard-check " tooltip="Complete Update" onclick="updateFinished()" ></i>
+                    </heading>
                     <img></img>
                     <info>
                         <detail>
                             <p>image :</p>
-                            <input type="file" name="fImg"></input>
+                            <input type="file" id="fImg"></input>
                         </detail>
                         <detail>
                             <p>name :</p>
-                            <input type="text" name="fName"></input>
+                            <input type="text" id="fName"></input>
                         </detail>
                         <detail>
                             <p>destination :</p>
-                            <input type="text" name="fDesig"></input>
+                            <input type="text" id="fDesig"></input>
                         </detail>
                         <detail>
                             <p>Email ID :</p>
-                            <input type="text" name="fEmailID"></input>
+                            <input type="text" id="fEmailID"></input>
                         </detail>
                         <detail>
                             <p>Contact No :</p>
-                            <input type="tel" name="fPhone"></input>
+                            <input type="tel" id="fPhone"></input>
                         </detail>
                         <detail>
                             <p>area of specification :</p>
-                            <input type="text" name="fAreaOfSpec" required></input>
+                            <input type="text" id="fAreaOfSpec" required></input>
                         </detail>
                         <detail>
                             <p>prersonal site :</p>
-                            <input type="text" name="fPersonalSite" required value="#"></input>
+                            <input type="text" id="fPersonalSite" required value="#"></input>
                         </detail>
                         <detail>
                             <p>ACOE site :</p>
-                            <input type="text" name="fACOE" required value="#"></input>
+                            <input type="text" id="fACOE" required value="#"></input>
                         </detail>
                         <detail id="item-edit">
                         <i class="fas fa-trash " id="item-edit-delete"></i>
@@ -88,14 +91,14 @@
                         <item>Awards</item>
                         <item>Awards</item>
                         <item>Awards</item>
-                        <item>
+                        <item onclick='addCol()'>
                             <p><strong>ADD</strong></p>
                             <i class="fas fa-plus" ></i>
                         </item>
                     </colList>
-                    <colDisp id="colDisp">
+                    <colDisp>
                     <items id="colName">Awards</items>
-                    <items>
+                    <items onclick=''>
                         <p><strong>ADD</strong></p>
                         <i class="fas fa-plus"></i>
                     </items>

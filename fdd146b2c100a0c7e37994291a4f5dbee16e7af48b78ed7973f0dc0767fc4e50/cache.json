@@ -1,36 +1,44 @@
 {
-    "extraCol": [],
+    "id": [0, 0, 0],
+    "change": {
+        "tech": [],
+        "nonTech": [],
+        "office": []
+    },
+    "new": {
+        "tech": [],
+        "nonTech": [],
+        "office": []
+    },
     "tech": [{
-            "fID": 1,
-            "name": "",
-            "designation": "",
-            "emailID": "",
-            "phoneNo": "",
-            "image": "",
-            "type": 1,
-            "present": 1,
-            "areaOfSpec": "",
-            "presonalSite": "",
-            "acoeSite": "",
-            "extraCol": []
+        "fID": 1,
+        "name": "",
+        "designation": "",
+        "emailID": "",
+        "phoneNo": "",
+        "image": "",
+        "type": 1,
+        "present": 1,
+        "areaOfSpec": "",
+        "presonalSite": "",
+        "acoeSite": "",
+        "extraCol": []
 
-        },
-        {
-            "fID": 1,
-            "name": "",
-            "designation": "",
-            "emailID": "",
-            "phoneNo": "",
-            "image": "",
-            "type": 1,
-            "present": 1,
-            "areaOfSpec": "",
-            "presonalSite": "",
-            "acoeSite": "",
-            "extraCol": []
+    }, {
+        "fID": 1,
+        "name": "",
+        "designation": "",
+        "emailID": "",
+        "phoneNo": "",
+        "image": "",
+        "type": 1,
+        "present": 1,
+        "areaOfSpec": "",
+        "presonalSite": "",
+        "acoeSite": "",
+        "extraCol": []
 
-        }
-    ],
+    }],
     "nonTech": [{
             "fID": 1,
             "name": "",

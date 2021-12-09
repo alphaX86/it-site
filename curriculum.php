@@ -8,7 +8,7 @@
     <div class='site'>
         <?php include 'header.php'?>
         <div class="curriculum">
-            <div  class="curriculum-title">CURRICULM</div>
+            <div  class="curriculum-title">CURRICULUM</div>
             <div class="curriculum-opt">
                 <div class="curriculum-opt-list" onclick="dispCurrCol('B.Tech')">
                     <i class="fas fa-book-reader"></i>
