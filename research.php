@@ -88,7 +88,6 @@
         <button class="tablinks" onclick="openCity(event, 'scholar')">Scholars</button>
         <button class="tablinks" onclick="openCity(event, 'project')">Project Report</button>
     </div>
-
     <div id="sponsor" class="tabcontent">
         <h3>
             <center>Sponsored Projects</center>
@@ -317,7 +316,6 @@
             generateTable(table, sponsored_projects);
         </script>
     </div>
-
     <div id="ctdt" class="tabcontent">
         <h3>
             <center>CTDT Projects</center>
@@ -1539,7 +1537,7 @@
                 <td>Dr. Dhananjay Kumar</td>
             </tr>
     </div>
-
+    
     <script>
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
