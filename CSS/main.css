@@ -6,6 +6,8 @@
   display: grid;
   grid-template-rows: 17vh auto;
   padding-bottom: 0.8%;
+  font-family: 'Times New Roman', 'Quicksand', sans-serif;
+  font-weight: 700;
 }
 
 .header {
