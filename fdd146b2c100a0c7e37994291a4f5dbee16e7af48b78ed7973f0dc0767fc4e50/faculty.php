@@ -31,7 +31,7 @@
                 $updStage=$_POST['updStage']; 
             $change=$_POST['change'];
             if(!isset($_COOKIE['changedRows']))
-                setcookie("changedRows", "", time() + (900), "/");
+                setcookie("changedRows", "", time() + (100), "/");
             if(!isset($_COOKIE['addedCol']))
                 setcookie("addedCol", "", time() + (900), "/");
             if($updStage=='done'&&$change==-1){ //Advanced INFO UPDATE

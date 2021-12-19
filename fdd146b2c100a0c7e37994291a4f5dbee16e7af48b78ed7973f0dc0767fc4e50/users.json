@@ -1,0 +1,126 @@
+{
+    "flashNews": {
+        "id": 1,
+        "password": 1234
+    },
+    "fac1": {
+        "id": 1,
+        "type": 1,
+        "password": 1234
+    },
+    "fac2": {
+        "id": 2,
+        "type": 1,
+        "password": 1234
+    },
+    "fac3": {
+        "id": 3,
+        "type": 1,
+        "password": 1234
+    },
+    "fac4": {
+        "id": 4,
+        "type": 1,
+        "password": 1234
+    },
+    "fac5": {
+        "id": 5,
+        "type": 1,
+        "password": 1234
+    },
+    "fac6": {
+        "id": 6,
+        "type": 1,
+        "password": 1234
+    },
+    "fac7": {
+        "id": 7,
+        "type": 1,
+        "password": 1234
+    },
+    "fac8": {
+        "id": 8,
+        "type": 1,
+        "password": 1234
+    },
+    "fac9": {
+        "id": 9,
+        "type": 1,
+        "password": 1234
+    },
+    "fac10": {
+        "id": 10,
+        "type": 1,
+        "password": 1234
+    },
+    "fac11": {
+        "id": 11,
+        "type": 1,
+        "password": 1234
+    },
+    "fac12": {
+        "id": 12,
+        "type": 1,
+        "password": 1234
+    },
+    "fac13": {
+        "id": 13,
+        "type": 1,
+        "password": 1234
+    },
+    "fac14": {
+        "id": 14,
+        "type": 1,
+        "password": 1234
+    },
+    "fac15": {
+        "id": 15,
+        "type": 1,
+        "password": 1234
+    },
+    "fac16": {
+        "id": 16,
+        "type": 1,
+        "password": 1234
+    },
+    "fac17": {
+        "id": 17,
+        "type": 1,
+        "password": 1234
+    },
+    "fac18": {
+        "id": 18,
+        "type": 1,
+        "password": 1234
+    },
+    "fac19": {
+        "id": 19,
+        "type": 1,
+        "password": 1234
+    },
+    "fac20": {
+        "id": 20,
+        "type": 1,
+        "password": 1234
+    },
+    "fac21": {
+        "id": 21,
+        "type": 1,
+        "password": 1234
+    },
+    "fac22": {
+        "id": 22,
+        "type": 1,
+        "password": 1234
+    },
+    "fac23": {
+        "id": 23,
+        "type": 1,
+        "password": 1234
+    },
+    "fac24": {
+        "id": 24,
+        "type": 1,
+        "password": 1234
+    }
+}
