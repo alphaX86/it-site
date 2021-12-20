@@ -40,12 +40,11 @@
         grid-gap: 2% 2%;
         padding: 2%;
         overflow-y: scroll;
-        visibility: hidden;
         //background-color: theme("primary");
         &Item {
             //border: 0.1vh solid black;
             border-radius: 5px;
-            //height: 35vh;
+            height: min(23vw, 35vh);
             // width: 15vw;
             display: grid;
             //background-color: rgba(10, 10, 10, 0.877);

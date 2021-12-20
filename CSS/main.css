@@ -419,10 +419,10 @@
   grid-gap: 2% 2%;
   padding: 2%;
   overflow-y: scroll;
-  visibility: hidden;
 }
 .faculty-listItem {
   border-radius: 5px;
+  height: min(23vw, 35vh);
   display: grid;
   background-color: #1461d5;
   grid-template-rows: min(15vw, 25vh) auto auto auto;
