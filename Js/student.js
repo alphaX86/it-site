@@ -148,6 +148,8 @@ function selDeg(a) {
         new: "",
         prv: ""
     };
+    document.getElementById('FAs').style['visibility'] = 'hidden';
+    document.getElementById('FAs').style['z=index'] = '-1';
     document.getElementById('subOpt').style['visibility'] = 'hidden';
     document.getElementById('currDisp').style['visibility'] = 'hidden';
     document.getElementById(deg.new).style['background-color'] = '#003f9d';
@@ -168,4 +170,51 @@ function selOpt(a) {
     };
     document.getElementById(opt.new).style = style.new;
     populateSubOpt(a);
+}
+
+function ImageGridItem(image, id = '') {
+    const style = `
+    grid-column-end: span ${ getSpanEstimate(image.width) };
+    grid-row-end: span ${ getSpanEstimate(image.height) }`;
+
+
+    return `<img id=${id} style ="${ style }" src = "${ image.url }" alt = "${ image.alt}" loading="lazy" />`;
+}
+
+function dispFA() {
+    document.getElementById('FAs').style['visibility'] = 'visible';
+    document.getElementById('FAs').style['z=index'] = '10';
+    document.getElementById('cover').style['display'] = 'none';
+}
+
+function getSpanEstimate(size) {
+    if (size > 450) {
+        return 3;
+    } else if (size > 250) {
+        return 2
+    }
+
+    return 1
+}
+window.onload = () => {
+    let srcs = ['Images/students/1.jpeg',
+        'Images/students/2.jpeg',
+        'Images/students/3.jpeg',
+        'Images/students/4.jpeg',
+        'Images/students/5.jpeg',
+        'Images/students/6.jpeg',
+        'Images/students/7.jpeg',
+        'Images/students/3.jpeg',
+        'Images/students/4.jpeg',
+        'Images/students/5.jpeg'
+    ];
+
+    for (let i = 0; i < srcs.length; i++) {
+        let img = new Image();
+        img.src = srcs[i];
+        document.getElementById('cover').innerHTML += ImageGridItem(img, 'img' + i);
+        img.onload = () => {
+            document.getElementById('img' + i).src = img.src;
+        }
+    }
 }

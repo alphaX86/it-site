@@ -21,16 +21,14 @@
                     <i class="fas fa-laptop-code"></i>
                     <name>M.Tech</name>
                 </item>
-                <item>
+                <item onclick="dispFA()">
                     <i class="fas fa-award"></i>
-                    <name>MSc</name>
-                </item>
-                <item>
-                    <i class="fas fa-award"></i>
-                    <name>PHD</name>
+                    <name>FAs</name>
                 </item>
             </div>
-            <div class="student-cover" id="cover"></div>
+            <div class="student-cover" id="cover">
+                
+            </div>
             <div class="student-mainOpt Opt" id="mainOpt" style="visibility:hidden;">
                 <i onclick="selOpt('nameList')"  id="nameList">Name List</i>
                 <i onclick="selOpt('timeTable')" id="timeTable">Time Table</i>
@@ -38,7 +36,10 @@
             <div class="student-mainOpt" id="subOpt" style="visibility:hidden;">
             </div>
             <div class="student-display" id="currDisp" style="visibility:hidden;">
-            </div>            
+            </div> 
+            <div class="student-FA" id="FAs">
+            <iframe style="border: none;" src="../PDF/student/FAs.pdf"></iframe>
+            </div>           
         </div>
         <?php include 'footer.php'?>
 

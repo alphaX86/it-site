@@ -40,11 +40,11 @@
                     </div>
                     <div class="aboutUs-opts_imgSlide">
                         <images>
-                            <img src="./Images/MainPage/SL-1.jpeg"/>
-                            <img src="./Images/MainPage/SL-2.jpg"/>
-                            <img src="./Images/MainPage/SL-3.jpg"/>
-                            <img src="./Images/MainPage/SL-4.jpg"/>
-                            <img src="./Images/MainPage/SL-5.jpg"/>
+                            <img src="./Images/MainPage/SL-1.jpeg" loading="lazy"/>
+                            <img src="./Images/MainPage/SL-2.jpg" loading="lazy"/>
+                            <img src="./Images/MainPage/SL-3.jpg" loading="lazy"/>
+                            <img src="./Images/MainPage/SL-4.jpg" loading="lazy"/>
+                            <img src="./Images/MainPage/SL-5.jpg" loading="lazy"/>
                         </images>    
                     </div>
                     <?php
