@@ -50,3 +50,17 @@ ul {
     background-color: #b7d2f1;
     transform: scale(1vh, 1vw);
 }
+
+.skeleton {
+    @include vendorPrefix('animation',
+    'skeleton-animation 1s linear infinite alternate');
+}
+
+@keyframes skeleton-animation {
+    0% {
+        background-color: rgba(192, 192, 192, 0.871);
+    }
+    100% {
+        background-color: rgba(128, 128, 128, 0.885);
+    }
+}

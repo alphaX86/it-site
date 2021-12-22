@@ -1907,4 +1907,21 @@ ul {
   grid-column: 1/-1;
   background-color: #b7d2f1;
   transform: scale(1vh, 1vw);
+}
+
+.skeleton {
+  animation: skeleton-animation 1s linear infinite alternate;
+  -webkit-animation: skeleton-animation 1s linear infinite alternate;
+  -moz-animation: skeleton-animation 1s linear infinite alternate;
+  -ms-animation: skeleton-animation 1s linear infinite alternate;
+  -o-animation: skeleton-animation 1s linear infinite alternate;
+}
+
+@keyframes skeleton-animation {
+  0% {
+    background-color: rgba(192, 192, 192, 0.871);
+  }
+  100% {
+    background-color: rgba(128, 128, 128, 0.885);
+  }
 }/*# sourceMappingURL=main.css.map */

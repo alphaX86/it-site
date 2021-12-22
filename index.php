@@ -40,11 +40,7 @@
                     </div>
                     <div class="aboutUs-opts_imgSlide">
                         <images>
-                            <img src="./Images/MainPage/SL-1.jpeg" loading="lazy"/>
-                            <img src="./Images/MainPage/SL-2.jpg" loading="lazy"/>
-                            <img src="./Images/MainPage/SL-3.jpg" loading="lazy"/>
-                            <img src="./Images/MainPage/SL-4.jpg" loading="lazy"/>
-                            <img src="./Images/MainPage/SL-5.jpg" loading="lazy"/>
+                            
                         </images>    
                     </div>
                     <?php
@@ -94,6 +90,9 @@
             </div>
            <?php include 'footer.php'?>
         </div>
+        
     </body>
+    <script src="./Js/main.js" type="text/javascript"></script>
+
 
 </html>
